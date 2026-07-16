@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="180" viewBox="0 0 680 180" role="img" aria-label="Business Portals — linked project">
+  <rect width="680" height="180" fill="#ffffff"/>
+  <!-- Independent -->
+  <rect x="0" y="0" width="680" height="180" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <path d="M 0 14 Q 0 0 14 0 L 164 0 L 164 180 L 14 180 Q 0 180 0 166 Z" fill="#6d28d9"/>
+    <text x="82" y="74.5" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, Menlo, monospace" font-size="8.5" font-weight="700" letter-spacing="0.14em">INDEPENDENT</text>
+      <line x1="60" y1="84.5" x2="104" y2="84.5" stroke="#ffffff" stroke-width="1" opacity="0.35"/>
+      <text x="82" y="98.5" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700">End-to-end</text>
+      <text x="82" y="112.5" text-anchor="middle" fill="#ffffff" opacity="0.78" font-family="system-ui, -apple-system, sans-serif" font-size="7">portal delivery</text>
+    <text x="184" y="34" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600">Business Portals</text>
+    <line x1="184" y1="37" x2="331" y2="37" stroke="#7c3aed" stroke-width="1.2"/>
+    <text x="184" y="52" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="8.5">Invoicing, maps &amp; vendor coordination</text>
+  <line x1="184" y1="62" x2="660" y2="62" stroke="#f3f4f6" stroke-width="1"/>
+    <text x="184" y="82" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+    <text x="194" y="82" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">Spring Boot portal for invoices, work orders &amp; scheduling</text>
+    <text x="184" y="100" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+    <text x="194" y="100" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">Maps, messaging &amp; vendor tools for field teams</text>
+    <text x="184" y="118" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+    <text x="194" y="118" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">PostgreSQL schemas &amp; secure role-based REST APIs</text>
+    <rect x="184.0" y="139.0" width="33.6" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="200.8" y="150.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Java</text>
+    <rect x="222.6" y="139.0" width="71.4" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="258.3" y="150.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Spring Boot</text>
+    <rect x="299.0" y="139.0" width="66.0" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="332.0" y="150.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">PostgreSQL</text>
+    <rect x="370.0" y="139.0" width="66.0" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="403.0" y="150.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">JavaScript</text>
+    <rect x="441.0" y="139.0" width="60.6" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="471.3" y="150.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Bootstrap</text>
+</svg>

@@ -6,6 +6,7 @@ from __future__ import annotations
 from pathlib import Path
 
 OUT = Path(__file__).resolve().parents[1] / "assets" / "project-timeline.svg"
+CARD_DIR = Path(__file__).resolve().parents[1] / "assets" / "project-cards"
 
 SVG_W = 680
 CARD_W = SVG_W
@@ -16,12 +17,14 @@ RADIUS = 14
 
 PROJECTS = [
     {
+        "id": "bwell",
         "company": "B.well",
         "panel": "#7c3aed",
         "metric": "65M+",
         "metric_label": "users served",
         "title": "Connected Health",
         "subtitle": "Enterprise healthcare platform",
+        "url": "https://www.icanbwell.com/",
         "achievements": [
             "75% faster feature delivery for Walgreens & Samsung",
             "Monolith → React micro-frontends & NestJS microservices",
@@ -31,12 +34,14 @@ PROJECTS = [
         "tech": ["React", "TypeScript", "NestJS", "Kafka", "AWS", "GraphQL"],
     },
     {
+        "id": "business-portal",
         "company": "Independent",
         "panel": "#6d28d9",
         "metric": "End-to-end",
         "metric_label": "portal delivery",
-        "title": "Business Portal",
+        "title": "Business Portals",
         "subtitle": "Invoicing, maps & vendor coordination",
+        "url": "https://github.com/hannahpaterka/busines-portal-readme",
         "achievements": [
             "Spring Boot portal for invoices, work orders & scheduling",
             "Maps, messaging & vendor tools for field teams",
@@ -45,12 +50,14 @@ PROJECTS = [
         "tech": ["Java", "Spring Boot", "PostgreSQL", "JavaScript", "Bootstrap"],
     },
     {
+        "id": "kronos",
         "company": "Kronos",
         "panel": "#8b5cf6",
         "metric": "Automation",
         "metric_label": "ops & workflows",
         "title": "Business Management",
         "subtitle": "Spring Boot · office & field teams",
+        "url": None,
         "achievements": [
             "85% fewer data entry errors & support calls via automation",
             "Invoicing, payments, scheduling & job tracking",
@@ -114,15 +121,11 @@ def achievement_block(x: int, y: int, achievements: list[str], max_w: int) -> tu
 
 
 def tech_pills(x: int, y: int, tech: list[str], max_w: int) -> tuple[str, int]:
-    parts: list[str] = [
-        f'<text x="{x}" y="{y}" fill="#64748b" '
-        f'font-family="ui-monospace, Menlo, monospace" font-size="7.5" '
-        f'letter-spacing="0.08em">TECH</text>',
-    ]
+    parts: list[str] = []
     pill_h = 17
     gap_x = 5
     gap_y = 5
-    cx = x + 34
+    cx = x
     cy = y - 11
     row_start = cx
     for label in tech:
@@ -141,6 +144,35 @@ def tech_pills(x: int, y: int, tech: list[str], max_w: int) -> tuple[str, int]:
         )
         cx += pill_w + gap_x
     return "\n    ".join(parts), cy + pill_h + 4
+
+
+def title_block(project: dict, content_x: int, y: int) -> str:
+    title = project["title"]
+    subtitle = project["subtitle"]
+    if project.get("url"):
+        title_w = len(title) * 9.2
+        return "\n    ".join(
+            [
+                f'<text x="{content_x}" y="{y + 34}" fill="#7c3aed" '
+                f'font-family="system-ui, -apple-system, sans-serif" font-size="16" '
+                f'font-weight="600">{esc(title)}</text>',
+                f'<line x1="{content_x}" y1="{y + 37}" x2="{content_x + title_w:.0f}" y2="{y + 37}" '
+                f'stroke="#7c3aed" stroke-width="1.2"/>',
+                f'<text x="{content_x}" y="{y + 52}" fill="#64748b" '
+                f'font-family="system-ui, -apple-system, sans-serif" font-size="8.5">'
+                f"{esc(subtitle)}</text>",
+            ]
+        )
+    return "\n    ".join(
+        [
+            f'<text x="{content_x}" y="{y + 34}" fill="#111827" '
+            f'font-family="system-ui, -apple-system, sans-serif" font-size="16" '
+            f'font-weight="700">{esc(title)}</text>',
+            f'<text x="{content_x}" y="{y + 52}" fill="#64748b" '
+            f'font-family="system-ui, -apple-system, sans-serif" font-size="8.5">'
+            f"{esc(subtitle)}</text>",
+        ]
+    )
 
 
 def panel_path(y: int, h: float) -> str:
@@ -208,12 +240,7 @@ def card(project: dict, y: int, card_h: int) -> str:
             f'fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>',
             f'<path d="{panel_path(y, card_h)}" fill="{panel}"/>',
             f"  {panel_sidebar(project, y, card_h)}",
-            f'<text x="{content_x}" y="{y + 34}" fill="#111827" '
-            f'font-family="system-ui, -apple-system, sans-serif" font-size="16" '
-            f'font-weight="700">{esc(project["title"])}</text>',
-            f'<text x="{content_x}" y="{y + 52}" fill="#64748b" '
-            f'font-family="system-ui, -apple-system, sans-serif" font-size="8.5">'
-            f'{esc(project["subtitle"])}</text>',
+            f"  {title_block(project, content_x, y)}",
             f'<line x1="{content_x}" y1="{y + 62}" x2="{CARD_W - PAD}" y2="{y + 62}" '
             f'stroke="#f3f4f6" stroke-width="1"/>',
             f"  {achievements}",
@@ -237,7 +264,22 @@ def main() -> None:
 </svg>
 '''
     OUT.write_text(svg, encoding="utf-8")
+
+    CARD_DIR.mkdir(parents=True, exist_ok=True)
+    for project, card_h in zip(PROJECTS, heights):
+        label = project["title"]
+        if project.get("url"):
+            label = f'{label} — linked project'
+        card_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{SVG_W}" height="{card_h}" viewBox="0 0 {SVG_W} {card_h}" role="img" aria-label="{esc(label)}">
+  <rect width="{SVG_W}" height="{card_h}" fill="#ffffff"/>
+  {card(project, 0, card_h)}
+</svg>
+'''
+        card_path = CARD_DIR / f'{project["id"]}.svg'
+        card_path.write_text(card_svg, encoding="utf-8")
+
     print(f"Wrote {OUT} ({SVG_W}x{svg_h})")
+    print(f"Wrote {len(PROJECTS)} clickable cards in {CARD_DIR}")
 
 
 if __name__ == "__main__":

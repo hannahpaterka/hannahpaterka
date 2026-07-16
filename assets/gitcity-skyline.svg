@@ -17,12 +17,12 @@
     font-size="18" font-weight="800" letter-spacing="0.18em">GIT SKYLINE</text>
 
   <g id="click-me-hint" aria-hidden="true">
-    <rect x="408" y="16.0" width="96" height="22" rx="11"
+    <rect x="292" y="463.7" width="96" height="22" rx="11"
       fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5">
       <animate attributeName="opacity" values="1;0.3;1" dur="1.1s" repeatCount="indefinite"/>
       <animate attributeName="stroke-width" values="1.5;2.5;1.5" dur="1.1s" repeatCount="indefinite"/>
     </rect>
-    <text x="456" y="31.0" text-anchor="middle" fill="#7c3aed"
+    <text x="340" y="478.7" text-anchor="middle" fill="#7c3aed"
       font-family="system-ui, -apple-system, sans-serif" font-size="8.5"
       font-weight="800" letter-spacing="0.14em">CLICK ME
       <animate attributeName="opacity" values="1;0.35;1" dur="1.1s" repeatCount="indefinite"/>

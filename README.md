@@ -4,10 +4,6 @@
   <img src="./assets/tagline-animation.svg" width="680" alt="React, TypeScript, healthcare platforms, and business portals" />
 </p>
 
-<p align="center">
-  <a href="https://linkedin.com/in/hannahpaterka"><img src="https://img.shields.io/badge/LinkedIn-hannahpaterka-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-</p>
-
 <!-- City skyline — stat squares + contribution graph -->
 <p align="center">
   <a href="https://gitcity.natrajx.in/hannahpaterka">
@@ -96,11 +92,17 @@ Currently at **Kronos**, building **Java/Spring Boot business portals** for desk
 
 ## Featured Work
 
-<!-- Project cards — achievements, stats & tech per role -->
+<!-- Project cards — linked titles open website or repo -->
 <p align="center">
-  <img src="./assets/project-timeline.svg" width="100%" alt="Featured work with project stats and tech stacks" />
+  <a href="https://www.icanbwell.com/">
+    <img src="./assets/project-cards/bwell.svg" width="680" alt="Connected Health — B.well website" />
+  </a>
 </p>
-
 <p align="center">
-  <a href="https://github.com/hannahpaterka/busines-portal-readme">📁 Business Portal repo → busines-portal-readme</a>
+  <a href="https://github.com/hannahpaterka/busines-portal-readme">
+    <img src="./assets/project-cards/business-portal.svg" width="680" alt="Business Portals — project readme" />
+  </a>
+</p>
+<p align="center">
+  <img src="./assets/project-cards/kronos.svg" width="680" alt="Business Management at Kronos" />
 </p>

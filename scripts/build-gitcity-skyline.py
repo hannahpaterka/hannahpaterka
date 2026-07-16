@@ -490,9 +490,8 @@ def achievement_cards() -> str:
 def click_me_badge() -> str:
     badge_w = 96
     badge_h = 22
-    card_col_x = OUT_W - CARD_W - 16
-    rect_x = card_col_x - badge_w - 12
-    rect_y = (HEADER_H - badge_h) / 2 + 1
+    rect_x = (OUT_W - badge_w) / 2
+    rect_y = HEADER_H + SKYLINE_H * 0.84 - badge_h / 2
     text_x = rect_x + badge_w / 2
     text_y = rect_y + 15
     return f"""
