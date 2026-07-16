@@ -5,8 +5,6 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/hannahpaterka"><img src="https://img.shields.io/github/followers/hannahpaterka?style=social" alt="GitHub followers" /></a>
-  &nbsp;
   <a href="https://linkedin.com/in/hannahpaterka"><img src="https://img.shields.io/badge/LinkedIn-hannahpaterka-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 </p>
 
@@ -17,7 +15,7 @@
   </a>
 </p>
 
-## Tech Stack
+## Tech
 
 <p align="left"><b>Frontend & UI</b></p>
 <p align="left">

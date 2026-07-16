@@ -1,55 +1,86 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="288.0" viewBox="0 0 960 288.0" role="img" aria-label="Featured work">
-  <rect width="960" height="288.0" fill="#ffffff"/>
-
-  <text x="480" y="28" text-anchor="middle" fill="#7c3aed"
-    font-family="ui-monospace, Menlo, monospace" font-size="12" letter-spacing="0.18em" font-weight="700">FEATURED WORK</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="590" viewBox="0 0 680 590" role="img" aria-label="Featured work">
+  <rect width="680" height="590" fill="#ffffff"/>
   <!-- B.well -->
-  <rect x="18" y="58" width="300" height="212.0" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
-  <rect x="18" y="58" width="3" height="212.0" fill="#7c3aed"/>
-  <text x="38" y="80" fill="#7c3aed" font-family="ui-monospace, Menlo, monospace" font-size="9" font-weight="700" letter-spacing="0.14em">B.WELL</text>
-  <rect x="252" y="66" width="50" height="26" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1"/>
-  <text x="277.0" y="84" text-anchor="middle" fill="#7c3aed" font-family="ui-monospace, Menlo, monospace" font-size="10" font-weight="700">65M+</text>
-  <text x="38" y="102" fill="#111827" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700">Connected Health</text>
-  <text x="38" y="118" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">Enterprise healthcare platform</text>
-  <text x="38" y="144.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">75% faster feature delivery for</text>
-    <text x="38" y="155.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Walgreens &amp; Samsung</text>
-    <text x="38" y="171.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Monolith → React micro-frontends &amp;</text>
-    <text x="38" y="182.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">NestJS microservices</text>
-    <text x="38" y="198.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Releases 2hr → 20min · 85%+ test</text>
-    <text x="38" y="209.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">coverage</text>
-    <text x="38" y="225.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">HIPAA Cognito/SSO, IAM &amp; Kafka event</text>
-    <text x="38" y="236.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">pipelines</text>
-  <text x="38" y="258.0" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="7.5" letter-spacing="0.06em">TECH</text>
-  <text x="70" y="258.0" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">React · TypeScript · NestJS · Kafka · AWS · GraphQL</text>  <!-- Independent -->
-  <rect x="330" y="58" width="300" height="212.0" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
-  <rect x="330" y="58" width="3" height="212.0" fill="#9333ea"/>
-  <text x="350" y="80" fill="#9333ea" font-family="ui-monospace, Menlo, monospace" font-size="9" font-weight="700" letter-spacing="0.14em">INDEPENDENT</text>
-  <rect x="516" y="66" width="98" height="26" fill="#f5f3ff" stroke="#9333ea" stroke-width="1"/>
-  <text x="565.0" y="84" text-anchor="middle" fill="#9333ea" font-family="ui-monospace, Menlo, monospace" font-size="10" font-weight="700">Full-stack</text>
-  <text x="350" y="102" fill="#111827" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700">Business Portal</text>
-  <text x="350" y="118" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">Invoicing, maps &amp; vendor coordination</text>
-  <text x="350" y="144.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Spring Boot portal for invoices,</text>
-    <text x="350" y="155.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">work orders &amp; scheduling</text>
-    <text x="350" y="171.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Maps, messaging &amp; vendor tools for</text>
-    <text x="350" y="182.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">field teams</text>
-    <text x="350" y="198.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">PostgreSQL schemas &amp; secure</text>
-    <text x="350" y="209.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">role-based REST APIs</text>
-  <text x="350" y="258.0" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="7.5" letter-spacing="0.06em">TECH</text>
-  <text x="382" y="258.0" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Java · Spring Boot · PostgreSQL · JavaScript · Bootstrap</text>  <!-- Kronos -->
-  <rect x="642" y="58" width="300" height="212.0" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
-  <rect x="642" y="58" width="3" height="212.0" fill="#8b5cf6"/>
-  <text x="662" y="80" fill="#8b5cf6" font-family="ui-monospace, Menlo, monospace" font-size="9" font-weight="700" letter-spacing="0.14em">KRONOS</text>
-  <rect x="878" y="66" width="48" height="26" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1"/>
-  <text x="902.0" y="84" text-anchor="middle" fill="#8b5cf6" font-family="ui-monospace, Menlo, monospace" font-size="10" font-weight="700">85%</text>
-  <text x="662" y="102" fill="#111827" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700">Business Management</text>
-  <text x="662" y="118" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">Spring Boot · office &amp; field teams</text>
-  <text x="662" y="144.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">85% fewer data entry errors &amp;</text>
-    <text x="662" y="155.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">support calls via automation</text>
-    <text x="662" y="171.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Invoicing, payments, scheduling &amp;</text>
-    <text x="662" y="182.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">job tracking</text>
-    <text x="662" y="198.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Zero-downtime deploys · desktop &amp;</text>
-    <text x="662" y="209.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">mobile portals</text>
-  <text x="662" y="258.0" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="7.5" letter-spacing="0.06em">TECH</text>
-  <text x="694" y="258.0" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Java · Spring Boot · PostgreSQL · Bootstrap · Heroku</text>
+  <rect x="0" y="0" width="680" height="198" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <path d="M 0 14 Q 0 0 14 0 L 164 0 L 164 198 L 14 198 Q 0 198 0 184 Z" fill="#7c3aed"/>
+    <text x="82" y="82.5" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, Menlo, monospace" font-size="8.5" font-weight="700" letter-spacing="0.14em">B.WELL</text>
+      <line x1="60" y1="92.5" x2="104" y2="92.5" stroke="#ffffff" stroke-width="1" opacity="0.35"/>
+      <text x="82" y="106.5" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700">65M+</text>
+      <text x="82" y="122.5" text-anchor="middle" fill="#ffffff" opacity="0.78" font-family="system-ui, -apple-system, sans-serif" font-size="7">users served</text>
+  <text x="184" y="34" fill="#111827" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700">Connected Health</text>
+  <text x="184" y="52" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="8.5">Enterprise healthcare platform</text>
+  <line x1="184" y1="62" x2="660" y2="62" stroke="#f3f4f6" stroke-width="1"/>
+    <text x="184" y="82" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+    <text x="194" y="82" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">75% faster feature delivery for Walgreens &amp; Samsung</text>
+    <text x="184" y="100" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+    <text x="194" y="100" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">Monolith → React micro-frontends &amp; NestJS microservices</text>
+    <text x="184" y="118" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+    <text x="194" y="118" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">Releases 2hr → 20min · 85%+ test coverage</text>
+    <text x="184" y="136" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+    <text x="194" y="136" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">HIPAA Cognito/SSO, IAM &amp; Kafka event pipelines</text>
+    <text x="184" y="168" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="7.5" letter-spacing="0.08em">TECH</text>
+    <rect x="218.0" y="157.0" width="39.0" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="237.5" y="168.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">React</text>
+    <rect x="262.0" y="157.0" width="66.0" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="295.0" y="168.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">TypeScript</text>
+    <rect x="333.0" y="157.0" width="44.4" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="355.2" y="168.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">NestJS</text>
+    <rect x="382.4" y="157.0" width="39.0" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="401.9" y="168.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Kafka</text>
+    <rect x="426.4" y="157.0" width="32.0" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="442.4" y="168.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">AWS</text>
+    <rect x="463.4" y="157.0" width="49.8" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="488.3" y="168.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">GraphQL</text>  <!-- Independent -->
+  <rect x="0" y="214" width="680" height="180" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <path d="M 0 228 Q 0 214 14 214 L 164 214 L 164 394 L 14 394 Q 0 394 0 380 Z" fill="#6d28d9"/>
+    <text x="82" y="288.5" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, Menlo, monospace" font-size="8.5" font-weight="700" letter-spacing="0.14em">INDEPENDENT</text>
+      <line x1="60" y1="298.5" x2="104" y2="298.5" stroke="#ffffff" stroke-width="1" opacity="0.35"/>
+      <text x="82" y="312.5" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700">End-to-end</text>
+      <text x="82" y="326.5" text-anchor="middle" fill="#ffffff" opacity="0.78" font-family="system-ui, -apple-system, sans-serif" font-size="7">portal delivery</text>
+  <text x="184" y="248" fill="#111827" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700">Business Portal</text>
+  <text x="184" y="266" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="8.5">Invoicing, maps &amp; vendor coordination</text>
+  <line x1="184" y1="276" x2="660" y2="276" stroke="#f3f4f6" stroke-width="1"/>
+    <text x="184" y="296" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+    <text x="194" y="296" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">Spring Boot portal for invoices, work orders &amp; scheduling</text>
+    <text x="184" y="314" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+    <text x="194" y="314" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">Maps, messaging &amp; vendor tools for field teams</text>
+    <text x="184" y="332" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+    <text x="194" y="332" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">PostgreSQL schemas &amp; secure role-based REST APIs</text>
+    <text x="184" y="364" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="7.5" letter-spacing="0.08em">TECH</text>
+    <rect x="218.0" y="353.0" width="33.6" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="234.8" y="364.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Java</text>
+    <rect x="256.6" y="353.0" width="71.4" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="292.3" y="364.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Spring Boot</text>
+    <rect x="333.0" y="353.0" width="66.0" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="366.0" y="364.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">PostgreSQL</text>
+    <rect x="404.0" y="353.0" width="66.0" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="437.0" y="364.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">JavaScript</text>
+    <rect x="475.0" y="353.0" width="60.6" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="505.3" y="364.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Bootstrap</text>  <!-- Kronos -->
+  <rect x="0" y="410" width="680" height="180" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <path d="M 0 424 Q 0 410 14 410 L 164 410 L 164 590 L 14 590 Q 0 590 0 576 Z" fill="#8b5cf6"/>
+    <text x="82" y="484.5" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, Menlo, monospace" font-size="8.5" font-weight="700" letter-spacing="0.14em">KRONOS</text>
+      <line x1="60" y1="494.5" x2="104" y2="494.5" stroke="#ffffff" stroke-width="1" opacity="0.35"/>
+      <text x="82" y="508.5" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700">Automation</text>
+      <text x="82" y="522.5" text-anchor="middle" fill="#ffffff" opacity="0.78" font-family="system-ui, -apple-system, sans-serif" font-size="7">ops &amp; workflows</text>
+  <text x="184" y="444" fill="#111827" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700">Business Management</text>
+  <text x="184" y="462" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="8.5">Spring Boot · office &amp; field teams</text>
+  <line x1="184" y1="472" x2="660" y2="472" stroke="#f3f4f6" stroke-width="1"/>
+    <text x="184" y="492" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+    <text x="194" y="492" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">85% fewer data entry errors &amp; support calls via automation</text>
+    <text x="184" y="510" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+    <text x="194" y="510" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">Invoicing, payments, scheduling &amp; job tracking</text>
+    <text x="184" y="528" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+    <text x="194" y="528" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">Zero-downtime deploys · desktop &amp; mobile portals</text>
+    <text x="184" y="560" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="7.5" letter-spacing="0.08em">TECH</text>
+    <rect x="218.0" y="549.0" width="33.6" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="234.8" y="560.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Java</text>
+    <rect x="256.6" y="549.0" width="71.4" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="292.3" y="560.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Spring Boot</text>
+    <rect x="333.0" y="549.0" width="66.0" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="366.0" y="560.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">PostgreSQL</text>
+    <rect x="404.0" y="549.0" width="60.6" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="434.3" y="560.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Bootstrap</text>
+    <rect x="469.6" y="549.0" width="44.4" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="491.8" y="560.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Heroku</text>
 </svg>

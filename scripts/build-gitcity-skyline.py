@@ -21,12 +21,12 @@ HEADER_H = 52
 OUT_H = HEADER_H + SKYLINE_H
 
 ACHIEVEMENT_CARDS = [
-    ("65M+", "users on health platforms"),
-    ("85%+", "unit test coverage"),
+    ("65M", "users on health platforms"),
     ("Mobile + Web", "responsive desktop & mobile"),
     ("2hr → 20min", "CI/CD deploy pipeline"),
-    ("75%", "faster feature delivery"),
     ("HIPAA", "compliant auth & data"),
+    ("85%+", "test coverage"),
+    ("Event-driven", "Kafka & microservices"),
 ]
 
 CARD_W = 148
@@ -488,23 +488,22 @@ def achievement_cards() -> str:
 
 
 def click_me_badge() -> str:
-    badge_w = 100
-    badge_h = 24
-    margin_x = 110
-    margin_y = 100
-    rect_x = margin_x
-    rect_y = OUT_H - badge_h - margin_y
+    badge_w = 96
+    badge_h = 22
+    card_col_x = OUT_W - CARD_W - 16
+    rect_x = card_col_x - badge_w - 12
+    rect_y = (HEADER_H - badge_h) / 2 + 1
     text_x = rect_x + badge_w / 2
-    text_y = rect_y + 16
+    text_y = rect_y + 15
     return f"""
   <g id="click-me-hint" aria-hidden="true">
-    <rect x="{rect_x:.0f}" y="{rect_y:.1f}" width="{badge_w}" height="{badge_h}" rx="12"
+    <rect x="{rect_x:.0f}" y="{rect_y:.1f}" width="{badge_w}" height="{badge_h}" rx="11"
       fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5">
       <animate attributeName="opacity" values="1;0.3;1" dur="1.1s" repeatCount="indefinite"/>
       <animate attributeName="stroke-width" values="1.5;2.5;1.5" dur="1.1s" repeatCount="indefinite"/>
     </rect>
     <text x="{text_x:.0f}" y="{text_y:.1f}" text-anchor="middle" fill="#7c3aed"
-      font-family="system-ui, -apple-system, sans-serif" font-size="9"
+      font-family="system-ui, -apple-system, sans-serif" font-size="8.5"
       font-weight="800" letter-spacing="0.14em">CLICK ME
       <animate attributeName="opacity" values="1;0.35;1" dur="1.1s" repeatCount="indefinite"/>
     </text>
@@ -528,12 +527,11 @@ def main() -> None:
     </clipPath>
   </defs>
 
-  <rect width="{OUT_W:.0f}" height="{OUT_H:.1f}" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <rect width="{OUT_W:.0f}" height="{OUT_H:.1f}" fill="#ffffff"/>
 
   <text x="24" y="30" fill="#111827"
     font-family="system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
     font-size="18" font-weight="800" letter-spacing="0.18em">GIT SKYLINE</text>
-  <rect x="24" y="38" width="88" height="3" rx="1.5" fill="#7c3aed"/>
 {click_me_badge()}
 
   <g clip-path="url(#skyline-clip)">
