@@ -92,11 +92,17 @@ Currently at **Kronos**, building **Java/Spring Boot business portals** for desk
 
 <h2 align="center">Featured Work</h2>
 
-<!-- Single full-width stack — click regions map to project links -->
+<!-- Each tile is a separate linked image — GitHub strips HTML image maps -->
 <p align="center">
-  <img src="./assets/featured-work.svg" width="100%" alt="Featured work" usemap="#featured-work-map" />
-  <map name="featured-work-map">
-    <area shape="rect" coords="0,0,680,216" href="https://www.icanbwell.com/" alt="Connected Health" />
-    <area shape="rect" coords="0,244,680,442" href="https://github.com/hannahpaterka/busines-portal-readme" alt="Business Portals" />
-  </map>
+  <a href="https://www.icanbwell.com/">
+    <img src="./assets/project-cards/bwell.svg" width="100%" alt="Connected Health — B.well enterprise healthcare platform" />
+  </a>
+  <br /><br />
+  <a href="https://github.com/hannahpaterka/busines-portal-readme">
+    <img src="./assets/project-cards/business-portal.svg" width="100%" alt="Business Portals — invoicing, maps, and vendor coordination" />
+  </a>
+  <br /><br />
+  <a href="https://github.com/hannahpaterka/busines-portal-readme">
+    <img src="./assets/project-cards/kronos.svg" width="100%" alt="Business Management — Spring Boot office and field teams" />
+  </a>
 </p>

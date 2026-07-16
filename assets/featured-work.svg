@@ -45,6 +45,15 @@
     <animate attributeName="x1" values="-320;680" dur="4.5s" begin="3.0s" repeatCount="indefinite"/>
     <animate attributeName="x2" values="360;1360" dur="4.5s" begin="3.0s" repeatCount="indefinite"/>
   </linearGradient>
+  <linearGradient id="title-shine-kronos" x1="0" y1="0" x2="320" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#111827"/>
+    <stop offset="40%" stop-color="#111827"/>
+    <stop offset="50%" stop-color="#8b5cf6"/>
+    <stop offset="60%" stop-color="#111827"/>
+    <stop offset="100%" stop-color="#111827"/>
+    <animate attributeName="x1" values="-180;320" dur="4.5s" begin="3.0s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="140;640" dur="4.5s" begin="3.0s" repeatCount="indefinite"/>
+  </linearGradient>
 </defs>
   <rect width="680" height="668" fill="#ffffff"/>
   <!-- B.well tile -->
@@ -118,7 +127,7 @@
     </rect>
     <text x="593.5" y="497" text-anchor="middle" fill="#8b5cf6" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="700">Automation</text>
     <text x="593.5" y="510" text-anchor="middle" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="6.5">ops &amp; workflows</text>
-    <text x="20" y="528" fill="#111827" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700">Business Management</text>
+    <text x="20" y="528" fill="url(#title-shine-kronos)" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700">Business Management</text>
     <text x="20" y="546" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="8.5">Spring Boot · office &amp; field teams</text>
     <text x="20" y="574" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
     <text x="30" y="574" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">85% fewer data entry errors &amp; support calls via automation</text>

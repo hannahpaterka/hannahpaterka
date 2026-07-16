@@ -58,7 +58,7 @@ PROJECTS = [
         "metric_label": "ops & workflows",
         "title": "Business Management",
         "subtitle": "Spring Boot · office & field teams",
-        "url": None,
+        "url": "https://github.com/hannahpaterka/busines-portal-readme",
         "achievements": [
             "85% fewer data entry errors & support calls via automation",
             "Invoicing, payments, scheduling & job tracking",
