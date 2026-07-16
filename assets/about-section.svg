@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="266" viewBox="0 0 680 266" role="img" aria-label="About Me">
+  <rect width="680" height="266" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="0" y="0" width="4" height="266" rx="14" fill="#111827"/>
+  <text x="32" y="28" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="400">Senior Software Engineer with 5 years of experience building HIPAA-compliant enterprise healthcare platforms — secure</text>
+  <text x="32" y="41" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="400">distributed systems, React micro-frontends, NestJS microservices, and event-driven apps serving 65M+ users.</text>
+  <text x="32" y="60" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="400">Currently at Kronos, building Java/Spring Boot business portals for desktop and mobile to streamline workflows for office</text>
+  <text x="32" y="73" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="400">and field teams.</text>
+  <text x="32" y="96" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+  <text x="42" y="96" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">B.well Connected Health — Modernized a monolithic platform into React micro-frontends and NestJS microservices,</text>
+  <text x="42" y="109" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">cutting feature delivery time by 75% for clients like Walgreens and Samsung</text>
+  <text x="32" y="126" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+  <text x="42" y="126" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">Strengthened security with AWS Cognito, SSO, IAM, and HIPAA-aligned access controls across distributed REST/GraphQL</text>
+  <text x="42" y="139" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">and Kafka event workflows</text>
+  <text x="32" y="156" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+  <text x="42" y="156" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">Improved release velocity from ~2 hours to ~20 minutes with GitHub Actions, 85%+ test coverage, and monitoring via</text>
+  <text x="42" y="169" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">Datadog &amp; Grafana</text>
+  <text x="32" y="186" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+  <text x="42" y="186" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">At Kronos, building invoicing, payments, scheduling, and job-tracking systems — reducing data entry errors and</text>
+  <text x="42" y="199" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">calls/emails by 85% through automation</text>
+  <text x="32" y="216" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+  <text x="42" y="216" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">Developing responsive Bootstrap/JavaScript frontends for field use, with PostgreSQL schemas and secure REST APIs</text>
+  <text x="42" y="229" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">with role-based permissions</text>
+</svg>

@@ -19,7 +19,7 @@ PROJECTS = [
     {
         "id": "bwell",
         "company": "B.well",
-        "panel": "#7c3aed",
+        "panel": "#111827",
         "metric": "65M+",
         "metric_label": "users served",
         "title": "Connected Health",
@@ -36,7 +36,7 @@ PROJECTS = [
     {
         "id": "business-portal",
         "company": "Independent",
-        "panel": "#6d28d9",
+        "panel": "#111827",
         "metric": "End-to-end",
         "metric_label": "portal delivery",
         "title": "Business Portals",
@@ -52,7 +52,7 @@ PROJECTS = [
     {
         "id": "kronos",
         "company": "Kronos",
-        "panel": "#8b5cf6",
+        "panel": "#111827",
         "metric": "Automation",
         "metric_label": "ops & workflows",
         "title": "Business Management",
@@ -150,14 +150,11 @@ def title_block(project: dict, content_x: int, y: int) -> str:
     title = project["title"]
     subtitle = project["subtitle"]
     if project.get("url"):
-        title_w = len(title) * 9.2
         return "\n    ".join(
             [
                 f'<text x="{content_x}" y="{y + 34}" fill="#7c3aed" '
                 f'font-family="system-ui, -apple-system, sans-serif" font-size="16" '
                 f'font-weight="600">{esc(title)}</text>',
-                f'<line x1="{content_x}" y1="{y + 37}" x2="{content_x + title_w:.0f}" y2="{y + 37}" '
-                f'stroke="#7c3aed" stroke-width="1.2"/>',
                 f'<text x="{content_x}" y="{y + 52}" fill="#64748b" '
                 f'font-family="system-ui, -apple-system, sans-serif" font-size="8.5">'
                 f"{esc(subtitle)}</text>",
@@ -197,19 +194,16 @@ def panel_sidebar(project: dict, y: int, card_h: int) -> str:
     metric_size = 10 if max(len(line) for line in metric_lines) > 9 else 12
     line_step = 13
 
-    block_h = 10 + 10 + len(metric_lines) * line_step + metric_size + 8
+    block_h = 8 + len(metric_lines) * line_step + metric_size + 8
     block_top = y + (card_h - block_h) / 2
-    company_y = block_top + 10
-    rule_y = company_y + 10
-    metric_y = rule_y + 14
+    company_y = block_top + 8
+    metric_y = company_y + 18
     label_y = metric_y + (len(metric_lines) - 1) * line_step + metric_size + 4
 
     parts = [
         f'<text x="{cx:.0f}" y="{company_y:.1f}" text-anchor="middle" fill="#ffffff" '
         f'font-family="ui-monospace, Menlo, monospace" font-size="8.5" font-weight="700" '
         f'letter-spacing="0.14em">{esc(project["company"].upper())}</text>',
-        f'<line x1="{cx - 22:.0f}" y1="{rule_y:.1f}" x2="{cx + 22:.0f}" y2="{rule_y:.1f}" '
-        f'stroke="#ffffff" stroke-width="1" opacity="0.35"/>',
     ]
     for index, line in enumerate(metric_lines):
         parts.append(
@@ -241,8 +235,6 @@ def card(project: dict, y: int, card_h: int) -> str:
             f'<path d="{panel_path(y, card_h)}" fill="{panel}"/>',
             f"  {panel_sidebar(project, y, card_h)}",
             f"  {title_block(project, content_x, y)}",
-            f'<line x1="{content_x}" y1="{y + 62}" x2="{CARD_W - PAD}" y2="{y + 62}" '
-            f'stroke="#f3f4f6" stroke-width="1"/>',
             f"  {achievements}",
             f"  {tech}",
         ]

@@ -2,15 +2,12 @@
   <rect width="680" height="590" fill="#ffffff"/>
   <!-- B.well -->
   <rect x="0" y="0" width="680" height="198" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
-  <path d="M 0 14 Q 0 0 14 0 L 164 0 L 164 198 L 14 198 Q 0 198 0 184 Z" fill="#7c3aed"/>
-    <text x="82" y="82.5" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, Menlo, monospace" font-size="8.5" font-weight="700" letter-spacing="0.14em">B.WELL</text>
-      <line x1="60" y1="92.5" x2="104" y2="92.5" stroke="#ffffff" stroke-width="1" opacity="0.35"/>
-      <text x="82" y="106.5" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700">65M+</text>
-      <text x="82" y="122.5" text-anchor="middle" fill="#ffffff" opacity="0.78" font-family="system-ui, -apple-system, sans-serif" font-size="7">users served</text>
+  <path d="M 0 14 Q 0 0 14 0 L 164 0 L 164 198 L 14 198 Q 0 198 0 184 Z" fill="#111827"/>
+    <text x="82" y="86.5" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, Menlo, monospace" font-size="8.5" font-weight="700" letter-spacing="0.14em">B.WELL</text>
+      <text x="82" y="104.5" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700">65M+</text>
+      <text x="82" y="120.5" text-anchor="middle" fill="#ffffff" opacity="0.78" font-family="system-ui, -apple-system, sans-serif" font-size="7">users served</text>
     <text x="184" y="34" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600">Connected Health</text>
-    <line x1="184" y1="37" x2="331" y2="37" stroke="#7c3aed" stroke-width="1.2"/>
     <text x="184" y="52" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="8.5">Enterprise healthcare platform</text>
-  <line x1="184" y1="62" x2="660" y2="62" stroke="#f3f4f6" stroke-width="1"/>
     <text x="184" y="82" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
     <text x="194" y="82" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">75% faster feature delivery for Walgreens &amp; Samsung</text>
     <text x="184" y="100" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
@@ -32,15 +29,12 @@
     <rect x="429.4" y="157.0" width="49.8" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
     <text x="454.3" y="168.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">GraphQL</text>  <!-- Independent -->
   <rect x="0" y="214" width="680" height="180" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
-  <path d="M 0 228 Q 0 214 14 214 L 164 214 L 164 394 L 14 394 Q 0 394 0 380 Z" fill="#6d28d9"/>
-    <text x="82" y="288.5" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, Menlo, monospace" font-size="8.5" font-weight="700" letter-spacing="0.14em">INDEPENDENT</text>
-      <line x1="60" y1="298.5" x2="104" y2="298.5" stroke="#ffffff" stroke-width="1" opacity="0.35"/>
-      <text x="82" y="312.5" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700">End-to-end</text>
-      <text x="82" y="326.5" text-anchor="middle" fill="#ffffff" opacity="0.78" font-family="system-ui, -apple-system, sans-serif" font-size="7">portal delivery</text>
+  <path d="M 0 228 Q 0 214 14 214 L 164 214 L 164 394 L 14 394 Q 0 394 0 380 Z" fill="#111827"/>
+    <text x="82" y="292.5" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, Menlo, monospace" font-size="8.5" font-weight="700" letter-spacing="0.14em">INDEPENDENT</text>
+      <text x="82" y="310.5" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700">End-to-end</text>
+      <text x="82" y="324.5" text-anchor="middle" fill="#ffffff" opacity="0.78" font-family="system-ui, -apple-system, sans-serif" font-size="7">portal delivery</text>
     <text x="184" y="248" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600">Business Portals</text>
-    <line x1="184" y1="251" x2="331" y2="251" stroke="#7c3aed" stroke-width="1.2"/>
     <text x="184" y="266" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="8.5">Invoicing, maps &amp; vendor coordination</text>
-  <line x1="184" y1="276" x2="660" y2="276" stroke="#f3f4f6" stroke-width="1"/>
     <text x="184" y="296" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
     <text x="194" y="296" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">Spring Boot portal for invoices, work orders &amp; scheduling</text>
     <text x="184" y="314" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
@@ -58,14 +52,12 @@
     <rect x="441.0" y="353.0" width="60.6" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
     <text x="471.3" y="364.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Bootstrap</text>  <!-- Kronos -->
   <rect x="0" y="410" width="680" height="180" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
-  <path d="M 0 424 Q 0 410 14 410 L 164 410 L 164 590 L 14 590 Q 0 590 0 576 Z" fill="#8b5cf6"/>
-    <text x="82" y="484.5" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, Menlo, monospace" font-size="8.5" font-weight="700" letter-spacing="0.14em">KRONOS</text>
-      <line x1="60" y1="494.5" x2="104" y2="494.5" stroke="#ffffff" stroke-width="1" opacity="0.35"/>
-      <text x="82" y="508.5" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700">Automation</text>
-      <text x="82" y="522.5" text-anchor="middle" fill="#ffffff" opacity="0.78" font-family="system-ui, -apple-system, sans-serif" font-size="7">ops &amp; workflows</text>
+  <path d="M 0 424 Q 0 410 14 410 L 164 410 L 164 590 L 14 590 Q 0 590 0 576 Z" fill="#111827"/>
+    <text x="82" y="488.5" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, Menlo, monospace" font-size="8.5" font-weight="700" letter-spacing="0.14em">KRONOS</text>
+      <text x="82" y="506.5" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700">Automation</text>
+      <text x="82" y="520.5" text-anchor="middle" fill="#ffffff" opacity="0.78" font-family="system-ui, -apple-system, sans-serif" font-size="7">ops &amp; workflows</text>
     <text x="184" y="444" fill="#111827" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700">Business Management</text>
     <text x="184" y="462" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="8.5">Spring Boot · office &amp; field teams</text>
-  <line x1="184" y1="472" x2="660" y2="472" stroke="#f3f4f6" stroke-width="1"/>
     <text x="184" y="492" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
     <text x="194" y="492" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">85% fewer data entry errors &amp; support calls via automation</text>
     <text x="184" y="510" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
