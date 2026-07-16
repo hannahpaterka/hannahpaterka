@@ -4,19 +4,17 @@
   <img src="./assets/tagline-animation.svg" width="680" alt="React, TypeScript, healthcare platforms, and business portals" />
 </p>
 
-<!-- City skyline — full GitCity graphic, nothing cropped -->
+<p align="center">
+  <a href="https://github.com/hannahpaterka"><img src="https://img.shields.io/github/followers/hannahpaterka?style=social" alt="GitHub followers" /></a>
+  &nbsp;
+  <a href="https://linkedin.com/in/hannahpaterka"><img src="https://img.shields.io/badge/LinkedIn-hannahpaterka-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+</p>
+
+<!-- City skyline — stat squares + contribution graph -->
 <p align="center">
   <a href="https://gitcity.natrajx.in/hannahpaterka">
-    <img src="https://gitcity.natrajx.in/api/svg?u=hannahpaterka&theme=light" width="100%" alt="Contribution city skyline" />
+    <img src="./assets/gitcity-skyline.svg" width="680" alt="Contribution city skyline with animated stats" />
   </a>
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=hannahpaterka&hide_border=true&background=FFFFFF&ring=7C3AED&fire=7C3AED&currStreakLabel=7C3AED&sideLabels=64748B&dates=64748B&sideNums=1F2937&currStreakNum=111827" height="165" alt="GitHub streak" />
-</p>
-
-<p align="center">
-  <img src="./assets/top-languages.svg" width="680" alt="Most used languages" />
 </p>
 
 ## Tech Stack
@@ -100,17 +98,11 @@ Currently at **Kronos**, building **Java/Spring Boot business portals** for desk
 
 ## Featured Work
 
-<!-- Combined timeline + project columns — achievements, stats & tech per role -->
+<!-- Project cards — achievements, stats & tech per role -->
 <p align="center">
-  <img src="./assets/project-timeline.svg" width="100%" alt="Featured work timeline with project stats and tech stacks" />
+  <img src="./assets/project-timeline.svg" width="100%" alt="Featured work with project stats and tech stacks" />
 </p>
 
 <p align="center">
   <a href="https://github.com/hannahpaterka/busines-portal-readme">📁 Business Portal repo → busines-portal-readme</a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/hannahpaterka"><img src="https://img.shields.io/github/followers/hannahpaterka?style=social" alt="GitHub followers" /></a>
-  &nbsp;
-  <a href="https://linkedin.com/in/hannahpaterka"><img src="https://img.shields.io/badge/LinkedIn-hannahpaterka-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 </p>
