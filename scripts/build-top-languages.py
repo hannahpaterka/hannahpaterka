@@ -142,16 +142,16 @@ def build_rows(
         parts.extend(
             [
                 f'<circle cx="{x + 10}" cy="{row_y + 14}" r="5" fill="{color}"/>',
-                f'<text x="{x + 24}" y="{row_y + 18}" fill="#e9d5ff" '
+                f'<text x="{x + 24}" y="{row_y + 18}" fill="#374151" '
                 f'font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="600">'
                 f"{esc(name)}</text>",
                 f'<rect x="{track_x}" y="{row_y + 8}" width="{track_w}" height="12" rx="6" '
-                f'fill="#1a1030" stroke="#4c1d95" stroke-width="0.6" opacity="0.9"/>',
+                f'fill="#f3f4f6" stroke="#e5e7eb" stroke-width="0.6" opacity="0.9"/>',
                 f'<rect x="{track_x}" y="{row_y + 8}" width="{fill_w:.1f}" height="12" rx="6" '
                 f'fill="{color}" opacity="0.92"/>',
                 f'<rect x="{x + width - 54}" y="{row_y + 4}" width="44" height="22" rx="11" '
-                f'fill="#12082a" stroke="{color}" stroke-width="1.2" opacity="0.95"/>',
-                f'<text x="{x + width - 32}" y="{row_y + 19}" text-anchor="middle" fill="#ffffff" '
+                f'fill="#ffffff" stroke="{color}" stroke-width="1.2" opacity="0.95"/>',
+                f'<text x="{x + width - 32}" y="{row_y + 19}" text-anchor="middle" fill="#1f2937" '
                 f'font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700">'
                 f"{pct}%</text>",
             ]
@@ -172,14 +172,14 @@ def build_donut(languages: list[tuple[str, int, int]], cx: float, cy: float) -> 
         )
         start += sweep
     parts.append(
-        f'<circle cx="{cx}" cy="{cy}" r="46" fill="#0a0618" stroke="#6025a5" stroke-width="1.2"/>'
+        f'<circle cx="{cx}" cy="{cy}" r="46" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.2"/>'
     )
     parts.append(
-        f'<text x="{cx}" y="{cy - 2}" text-anchor="middle" fill="#a855f7" '
+        f'<text x="{cx}" y="{cy - 2}" text-anchor="middle" fill="#7c3aed" '
         f'font-family="ui-monospace, Menlo, monospace" font-size="11" letter-spacing="0.08em">TOP</text>'
     )
     parts.append(
-        f'<text x="{cx}" y="{cy + 14}" text-anchor="middle" fill="#c4b5fd" '
+        f'<text x="{cx}" y="{cy + 14}" text-anchor="middle" fill="#9333ea" '
         f'font-family="ui-monospace, Menlo, monospace" font-size="11" letter-spacing="0.08em">LANGS</text>'
     )
     return "\n  ".join(parts)
@@ -198,32 +198,20 @@ def main() -> None:
 
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="680" height="{height:.0f}" viewBox="0 0 680 {height:.0f}" role="img" aria-label="Most used languages">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="680" y2="{height:.0f}" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#030710"/>
-      <stop offset="55%" stop-color="#0a0618"/>
-      <stop offset="100%" stop-color="#12082a"/>
-    </linearGradient>
     <linearGradient id="title" x1="0" y1="0" x2="420" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#6025a5"/>
-      <stop offset="50%" stop-color="#a855f7"/>
-      <stop offset="100%" stop-color="#c4b5fd"/>
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="50%" stop-color="#9333ea"/>
+      <stop offset="100%" stop-color="#a855f7"/>
     </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
 
-  <rect width="680" height="{height:.0f}" rx="16" fill="url(#bg)" stroke="#4c1d95" stroke-width="1" opacity="0.98"/>
+  <rect width="680" height="{height:.0f}" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" opacity="0.98"/>
 
-  <text x="24" y="36" fill="url(#title)" filter="url(#glow)"
+  <text x="24" y="36" fill="url(#title)"
     font-family="ui-monospace, Menlo, monospace" font-size="16" font-weight="700" letter-spacing="0.1em">
     MOST USED LANGUAGES
   </text>
-  <text x="24" y="54" fill="#7c7c8a"
+  <text x="24" y="54" fill="#64748b"
     font-family="ui-monospace, Menlo, monospace" font-size="10" letter-spacing="0.08em">
     PUBLIC REPOS · JS &amp; TS FOCUSED STACK
   </text>

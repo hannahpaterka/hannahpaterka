@@ -7,12 +7,12 @@
 <!-- City skyline — full GitCity graphic, nothing cropped -->
 <p align="center">
   <a href="https://gitcity.natrajx.in/hannahpaterka">
-    <img src="https://gitcity.natrajx.in/api/svg?u=hannahpaterka&theme=aurora" width="100%" alt="Contribution city skyline" />
+    <img src="https://gitcity.natrajx.in/api/svg?u=hannahpaterka&theme=light" width="100%" alt="Contribution city skyline" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=hannahpaterka&hide_border=true&background=030710&ring=a855f7&fire=a855f7&currStreakLabel=a855f7&sideLabels=c4b5fd&dates=c4b5fd&sideNums=c4b5fd&currStreakNum=ffffff" height="165" alt="GitHub streak" />
+  <img src="https://streak-stats.demolab.com/?user=hannahpaterka&hide_border=true&background=FFFFFF&ring=7C3AED&fire=7C3AED&currStreakLabel=7C3AED&sideLabels=64748B&dates=64748B&sideNums=1F2937&currStreakNum=111827" height="165" alt="GitHub streak" />
 </p>
 
 <p align="center">

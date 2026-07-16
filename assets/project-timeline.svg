@@ -1,74 +1,74 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="334.0" viewBox="0 0 960 334.0" role="img" aria-label="Featured work">
-  <rect width="960" height="334.0" fill="#030710"/>
+  <rect width="960" height="334.0" fill="#ffffff"/>
 
-  <text x="480" y="28" text-anchor="middle" fill="#c4b5fd"
+  <text x="480" y="28" text-anchor="middle" fill="#7c3aed"
     font-family="ui-monospace, Menlo, monospace" font-size="12" letter-spacing="0.18em" font-weight="700">FEATURED WORK</text>
 
   <!-- B.well -->
-  <rect x="18" y="58" width="300" height="220.0" fill="#0a0812" stroke="#1e1035" stroke-width="1"/>
-  <rect x="18" y="58" width="3" height="220.0" fill="#a855f7"/>
-  <text x="38" y="80" fill="#a855f7" font-family="ui-monospace, Menlo, monospace" font-size="9" font-weight="700" letter-spacing="0.14em">B.WELL</text>
+  <rect x="18" y="58" width="300" height="220.0" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="18" y="58" width="3" height="220.0" fill="#7c3aed"/>
+  <text x="38" y="80" fill="#7c3aed" font-family="ui-monospace, Menlo, monospace" font-size="9" font-weight="700" letter-spacing="0.14em">B.WELL</text>
   <text x="302" y="80" text-anchor="end" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">2021 – 2025</text>
-  <rect x="252" y="66" width="50" height="26" fill="#12082a" stroke="#a855f7" stroke-width="1"/>
-  <text x="277.0" y="84" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, Menlo, monospace" font-size="10" font-weight="700">65M+</text>
-  <text x="38" y="102" fill="#f8fafc" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700">Connected Health</text>
-  <text x="38" y="118" fill="#94a3b8" font-family="ui-monospace, Menlo, monospace" font-size="8">Enterprise healthcare platform</text>
+  <rect x="252" y="66" width="50" height="26" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1"/>
+  <text x="277.0" y="84" text-anchor="middle" fill="#7c3aed" font-family="ui-monospace, Menlo, monospace" font-size="10" font-weight="700">65M+</text>
+  <text x="38" y="102" fill="#111827" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700">Connected Health</text>
+  <text x="38" y="118" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">Enterprise healthcare platform</text>
   <text x="38" y="144" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">—</text>
-    <text x="48" y="144.0" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">75% faster feature delivery for</text>
-    <text x="48" y="155.5" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Walgreens &amp; Samsung</text>
+    <text x="48" y="144.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">75% faster feature delivery for</text>
+    <text x="48" y="155.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Walgreens &amp; Samsung</text>
     <text x="38" y="173.0" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">—</text>
-    <text x="48" y="173.0" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Monolith → React micro-frontends &amp;</text>
-    <text x="48" y="184.5" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">NestJS microservices</text>
+    <text x="48" y="173.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Monolith → React micro-frontends &amp;</text>
+    <text x="48" y="184.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">NestJS microservices</text>
     <text x="38" y="202.0" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">—</text>
-    <text x="48" y="202.0" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Releases 2hr → 20min · 85%+ test</text>
-    <text x="48" y="213.5" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">coverage</text>
+    <text x="48" y="202.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Releases 2hr → 20min · 85%+ test</text>
+    <text x="48" y="213.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">coverage</text>
     <text x="38" y="231.0" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">—</text>
-    <text x="48" y="231.0" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">HIPAA Cognito/SSO, IAM &amp; Kafka event</text>
-    <text x="48" y="242.5" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">pipelines</text>
+    <text x="48" y="231.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">HIPAA Cognito/SSO, IAM &amp; Kafka event</text>
+    <text x="48" y="242.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">pipelines</text>
   <text x="38" y="266.0" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="7.5" letter-spacing="0.06em">STACK</text>
-  <text x="78" y="266.0" fill="#94a3b8" font-family="ui-monospace, Menlo, monospace" font-size="7.5">React · TypeScript · NestJS · Kafka · AWS · GraphQL</text>  <!-- Contract -->
-  <rect x="330" y="58" width="300" height="220.0" fill="#0a0812" stroke="#1e1035" stroke-width="1"/>
-  <rect x="330" y="58" width="3" height="220.0" fill="#c084fc"/>
-  <text x="350" y="80" fill="#c084fc" font-family="ui-monospace, Menlo, monospace" font-size="9" font-weight="700" letter-spacing="0.14em">CONTRACT</text>
+  <text x="78" y="266.0" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">React · TypeScript · NestJS · Kafka · AWS · GraphQL</text>  <!-- Contract -->
+  <rect x="330" y="58" width="300" height="220.0" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="330" y="58" width="3" height="220.0" fill="#9333ea"/>
+  <text x="350" y="80" fill="#9333ea" font-family="ui-monospace, Menlo, monospace" font-size="9" font-weight="700" letter-spacing="0.14em">CONTRACT</text>
   <text x="614" y="80" text-anchor="end" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">2023 – 2024</text>
-  <rect x="516" y="66" width="98" height="26" fill="#12082a" stroke="#c084fc" stroke-width="1"/>
-  <text x="565.0" y="84" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, Menlo, monospace" font-size="10" font-weight="700">Full-stack</text>
-  <text x="350" y="102" fill="#f8fafc" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700">Business Portal</text>
-  <text x="350" y="118" fill="#94a3b8" font-family="ui-monospace, Menlo, monospace" font-size="8">Invoicing, maps &amp; vendor coordination</text>
+  <rect x="516" y="66" width="98" height="26" fill="#f5f3ff" stroke="#9333ea" stroke-width="1"/>
+  <text x="565.0" y="84" text-anchor="middle" fill="#9333ea" font-family="ui-monospace, Menlo, monospace" font-size="10" font-weight="700">Full-stack</text>
+  <text x="350" y="102" fill="#111827" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700">Business Portal</text>
+  <text x="350" y="118" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">Invoicing, maps &amp; vendor coordination</text>
   <text x="350" y="144" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">—</text>
-    <text x="360" y="144.0" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Spring Boot portal for invoices,</text>
-    <text x="360" y="155.5" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">work orders &amp; scheduling</text>
+    <text x="360" y="144.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Spring Boot portal for invoices,</text>
+    <text x="360" y="155.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">work orders &amp; scheduling</text>
     <text x="350" y="173.0" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">—</text>
-    <text x="360" y="173.0" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Maps, messaging &amp; vendor tools for</text>
-    <text x="360" y="184.5" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">field teams</text>
+    <text x="360" y="173.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Maps, messaging &amp; vendor tools for</text>
+    <text x="360" y="184.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">field teams</text>
     <text x="350" y="202.0" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">—</text>
-    <text x="360" y="202.0" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">PostgreSQL schemas &amp; secure</text>
-    <text x="360" y="213.5" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">role-based REST APIs</text>
+    <text x="360" y="202.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">PostgreSQL schemas &amp; secure</text>
+    <text x="360" y="213.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">role-based REST APIs</text>
   <text x="350" y="266.0" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="7.5" letter-spacing="0.06em">STACK</text>
-  <text x="390" y="266.0" fill="#94a3b8" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Java · Spring Boot · PostgreSQL · JavaScript · Bootstrap</text>  <!-- Kronos -->
-  <rect x="642" y="58" width="300" height="220.0" fill="#0a0812" stroke="#1e1035" stroke-width="1"/>
-  <rect x="642" y="58" width="3" height="220.0" fill="#a78bfa"/>
-  <text x="662" y="80" fill="#a78bfa" font-family="ui-monospace, Menlo, monospace" font-size="9" font-weight="700" letter-spacing="0.14em">KRONOS</text>
+  <text x="390" y="266.0" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Java · Spring Boot · PostgreSQL · JavaScript · Bootstrap</text>  <!-- Kronos -->
+  <rect x="642" y="58" width="300" height="220.0" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="642" y="58" width="3" height="220.0" fill="#8b5cf6"/>
+  <text x="662" y="80" fill="#8b5cf6" font-family="ui-monospace, Menlo, monospace" font-size="9" font-weight="700" letter-spacing="0.14em">KRONOS</text>
   <text x="926" y="80" text-anchor="end" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">2025 – Present</text>
-  <rect x="878" y="66" width="48" height="26" fill="#12082a" stroke="#a78bfa" stroke-width="1"/>
-  <text x="902.0" y="84" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, Menlo, monospace" font-size="10" font-weight="700">85%</text>
-  <text x="662" y="102" fill="#f8fafc" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700">Business Management</text>
-  <text x="662" y="118" fill="#94a3b8" font-family="ui-monospace, Menlo, monospace" font-size="8">Spring Boot · office &amp; field teams</text>
+  <rect x="878" y="66" width="48" height="26" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="902.0" y="84" text-anchor="middle" fill="#8b5cf6" font-family="ui-monospace, Menlo, monospace" font-size="10" font-weight="700">85%</text>
+  <text x="662" y="102" fill="#111827" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700">Business Management</text>
+  <text x="662" y="118" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">Spring Boot · office &amp; field teams</text>
   <text x="662" y="144" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">—</text>
-    <text x="672" y="144.0" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">85% fewer data entry errors &amp;</text>
-    <text x="672" y="155.5" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">support calls via automation</text>
+    <text x="672" y="144.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">85% fewer data entry errors &amp;</text>
+    <text x="672" y="155.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">support calls via automation</text>
     <text x="662" y="173.0" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">—</text>
-    <text x="672" y="173.0" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Invoicing, payments, scheduling &amp;</text>
-    <text x="672" y="184.5" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">job tracking</text>
+    <text x="672" y="173.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Invoicing, payments, scheduling &amp;</text>
+    <text x="672" y="184.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">job tracking</text>
     <text x="662" y="202.0" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">—</text>
-    <text x="672" y="202.0" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Zero-downtime deploys · desktop &amp;</text>
-    <text x="672" y="213.5" fill="#d1d5db" font-family="ui-monospace, Menlo, monospace" font-size="8.5">mobile portals</text>
+    <text x="672" y="202.0" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">Zero-downtime deploys · desktop &amp;</text>
+    <text x="672" y="213.5" fill="#374151" font-family="ui-monospace, Menlo, monospace" font-size="8.5">mobile portals</text>
   <text x="662" y="266.0" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="7.5" letter-spacing="0.06em">STACK</text>
-  <text x="702" y="266.0" fill="#94a3b8" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Java · Spring Boot · PostgreSQL · Bootstrap · Heroku</text>
+  <text x="702" y="266.0" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Java · Spring Boot · PostgreSQL · Bootstrap · Heroku</text>
 
-  <rect x="165" y="299.0" width="6" height="6" fill="#a855f7"/>
-  <rect x="477" y="299.0" width="6" height="6" fill="#c084fc"/>
-  <rect x="789" y="299.0" width="6" height="6" fill="#a78bfa"/>
+  <rect x="165" y="299.0" width="6" height="6" fill="#7c3aed"/>
+  <rect x="477" y="299.0" width="6" height="6" fill="#9333ea"/>
+  <rect x="789" y="299.0" width="6" height="6" fill="#8b5cf6"/>
   <text x="168" y="320.0" text-anchor="middle" fill="#64748b"
     font-family="ui-monospace, Menlo, monospace" font-size="9">2021</text>
   <text x="480" y="320.0" text-anchor="middle" fill="#64748b"

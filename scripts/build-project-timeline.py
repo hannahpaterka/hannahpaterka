@@ -17,7 +17,7 @@ SVG_W = MARGIN * 2 + CARD_W * 3 + CARD_GAP * 2  # 960
 PROJECTS = [
     {
         "company": "B.well",
-        "accent": "#a855f7",
+        "accent": "#7c3aed",
         "metric": "65M+",
         "title": "Connected Health",
         "subtitle": "Enterprise healthcare platform",
@@ -32,7 +32,7 @@ PROJECTS = [
     },
     {
         "company": "Contract",
-        "accent": "#c084fc",
+        "accent": "#9333ea",
         "metric": "Full-stack",
         "title": "Business Portal",
         "subtitle": "Invoicing, maps & vendor coordination",
@@ -46,7 +46,7 @@ PROJECTS = [
     },
     {
         "company": "Kronos",
-        "accent": "#a78bfa",
+        "accent": "#8b5cf6",
         "metric": "85%",
         "title": "Business Management",
         "subtitle": "Spring Boot · office & field teams",
@@ -100,7 +100,7 @@ def achievement_block(x: int, y: int, achievements: list[str]) -> tuple[str, int
         )
         for index, line in enumerate(lines):
             parts.append(
-                f'<text x="{x + 10}" y="{cy + 4 + index * line_h}" fill="#d1d5db" '
+                f'<text x="{x + 10}" y="{cy + 4 + index * line_h}" fill="#374151" '
                 f'font-family="ui-monospace, Menlo, monospace" font-size="8.5">{esc(line)}</text>'
             )
         cy += 6 + len(lines) * line_h
@@ -124,7 +124,7 @@ def card(project: dict, x: int, card_h: int) -> str:
     return "\n  ".join([
         f'<!-- {esc(project["company"])} -->',
         f'<rect x="{x}" y="{CARD_TOP}" width="{CARD_W}" height="{card_h}" '
-        f'fill="#0a0812" stroke="#1e1035" stroke-width="1"/>',
+        f'fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>',
         f'<rect x="{x}" y="{CARD_TOP}" width="3" height="{card_h}" fill="{project["accent"]}"/>',
         f'<text x="{inner + 4}" y="{CARD_TOP + 22}" fill="{project["accent"]}" '
         f'font-family="ui-monospace, Menlo, monospace" font-size="9" font-weight="700" letter-spacing="0.14em">'
@@ -132,17 +132,17 @@ def card(project: dict, x: int, card_h: int) -> str:
         f'<text x="{right}" y="{CARD_TOP + 22}" text-anchor="end" fill="#64748b" '
         f'font-family="ui-monospace, Menlo, monospace" font-size="8">{esc(project["dates"])}</text>',
         f'<rect x="{right - badge_w}" y="{CARD_TOP + 8}" width="{badge_w}" height="26" '
-        f'fill="#12082a" stroke="{project["accent"]}" stroke-width="1"/>',
-        f'<text x="{right - badge_w / 2}" y="{CARD_TOP + 26}" text-anchor="middle" fill="#ffffff" '
+        f'fill="#f5f3ff" stroke="{project["accent"]}" stroke-width="1"/>',
+        f'<text x="{right - badge_w / 2}" y="{CARD_TOP + 26}" text-anchor="middle" fill="{project["accent"]}" '
         f'font-family="ui-monospace, Menlo, monospace" font-size="10" font-weight="700">{esc(project["metric"])}</text>',
-        f'<text x="{inner + 4}" y="{CARD_TOP + 44}" fill="#f8fafc" font-family="ui-monospace, Menlo, monospace" '
+        f'<text x="{inner + 4}" y="{CARD_TOP + 44}" fill="#111827" font-family="ui-monospace, Menlo, monospace" '
         f'font-size="13" font-weight="700">{esc(project["title"])}</text>',
-        f'<text x="{inner + 4}" y="{CARD_TOP + 60}" fill="#94a3b8" font-family="ui-monospace, Menlo, monospace" font-size="8">'
+        f'<text x="{inner + 4}" y="{CARD_TOP + 60}" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8">'
         f'{esc(project["subtitle"])}</text>',
         achievements,
         f'<text x="{inner + 4}" y="{stack_y}" fill="#64748b" font-family="ui-monospace, Menlo, monospace" '
         f'font-size="7.5" letter-spacing="0.06em">STACK</text>',
-        f'<text x="{inner + 44}" y="{stack_y}" fill="#94a3b8" font-family="ui-monospace, Menlo, monospace" font-size="7.5">'
+        f'<text x="{inner + 44}" y="{stack_y}" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">'
         f'{esc(" · ".join(project["tech"]))}</text>',
     ])
 
@@ -156,9 +156,9 @@ def main() -> None:
     svg_h = timeline_y + 32
 
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{SVG_W}" height="{svg_h}" viewBox="0 0 {SVG_W} {svg_h}" role="img" aria-label="Featured work">
-  <rect width="{SVG_W}" height="{svg_h}" fill="#030710"/>
+  <rect width="{SVG_W}" height="{svg_h}" fill="#ffffff"/>
 
-  <text x="{SVG_W / 2:.0f}" y="28" text-anchor="middle" fill="#c4b5fd"
+  <text x="{SVG_W / 2:.0f}" y="28" text-anchor="middle" fill="#7c3aed"
     font-family="ui-monospace, Menlo, monospace" font-size="12" letter-spacing="0.18em" font-weight="700">FEATURED WORK</text>
 
   {"  ".join(rendered)}

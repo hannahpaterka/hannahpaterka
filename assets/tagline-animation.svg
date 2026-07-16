@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="680" height="52" viewBox="0 0 680 52" role="img" aria-label="Rotating professional taglines">
   <defs>
     <linearGradient id="shine" x1="0" y1="0" x2="680" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#a855f7"/>
-      <stop offset="45%" stop-color="#e9d5ff"/>
-      <stop offset="55%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#a855f7"/>
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="45%" stop-color="#9333ea"/>
+      <stop offset="55%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
       <animate attributeName="x1" values="-400;680" dur="5s" repeatCount="indefinite"/>
       <animate attributeName="x2" values="280;1360" dur="5s" repeatCount="indefinite"/>
     </linearGradient>
@@ -13,7 +13,7 @@
     </clipPath>
   </defs>
 
-  <rect width="680" height="52" fill="#030710"/>
+  <rect width="680" height="52" fill="#ffffff"/>
 
   <g clip-path="url(#fade-clip)" font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="500">
     <g opacity="1">
