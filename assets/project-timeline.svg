@@ -32,7 +32,7 @@
   <text x="400" y="218" text-anchor="middle" fill="#9898a6" font-family="ui-monospace, Menlo, monospace" font-size="10">2023</text>
   <text x="650" y="218" text-anchor="middle" fill="#9898a6" font-family="ui-monospace, Menlo, monospace" font-size="10">2025</text>
 
-  <!-- B.well tower (tallest  65M users) -->
+  <!-- B.well tower (tallest — 65M users) -->
   <rect x="110" y="58" width="80" height="140" rx="4" fill="url(#towerA)" opacity="0.95"/>
   <rect x="118" y="66" width="64" height="18" rx="2" fill="#0d0820" opacity="0.55"/>
   <text x="150" y="79" text-anchor="middle" fill="#f3e8ff" font-family="ui-monospace, Menlo, monospace" font-size="8" font-weight="bold">B.well</text>
@@ -40,7 +40,7 @@
   <text x="150" y="114" text-anchor="middle" fill="#e9d5ff" font-family="ui-monospace, Menlo, monospace" font-size="8">users</text>
   <text x="150" y="136" text-anchor="middle" fill="#ddd6fe" font-family="ui-monospace, Menlo, monospace" font-size="7">75% faster</text>
   <text x="150" y="148" text-anchor="middle" fill="#ddd6fe" font-family="ui-monospace, Menlo, monospace" font-size="7">delivery</text>
-  <text x="150" y="168" text-anchor="middle" fill="#c4b5fd" font-family="ui-monospace, Menlo, monospace" font-size="7">2021  2025</text>
+  <text x="150" y="168" text-anchor="middle" fill="#c4b5fd" font-family="ui-monospace, Menlo, monospace" font-size="7">2021 – 2025</text>
 
   <!-- Contract portal building -->
   <rect x="350" y="118" width="70" height="80" rx="4" fill="url(#towerC)" opacity="0.95"/>
@@ -57,7 +57,7 @@
   <text x="650" y="132" text-anchor="middle" fill="#dbeafe" font-family="ui-monospace, Menlo, monospace" font-size="10" font-weight="bold">85%</text>
   <text x="650" y="146" text-anchor="middle" fill="#bfdbfe" font-family="ui-monospace, Menlo, monospace" font-size="7">fewer errors</text>
   <text x="650" y="164" text-anchor="middle" fill="#93c5fd" font-family="ui-monospace, Menlo, monospace" font-size="7">0 downtime</text>
-  <text x="650" y="182" text-anchor="middle" fill="#93c5fd" font-family="ui-monospace, Menlo, monospace" font-size="7">2025  now</text>
+  <text x="650" y="182" text-anchor="middle" fill="#93c5fd" font-family="ui-monospace, Menlo, monospace" font-size="7">2025 – now</text>
 
   <!-- connection arcs -->
   <path d="M 190 130 Q 290 90 350 140" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.35" stroke-dasharray="4 3"/>
