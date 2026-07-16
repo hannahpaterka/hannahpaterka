@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="78" viewBox="0 0 680 78" role="img" aria-label="Animated role taglines">
+  <defs>
+    <linearGradient id="aurora" x1="0" y1="0" x2="680" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6025a5"/>
+      <stop offset="35%" stop-color="#a855f7"/>
+      <stop offset="50%" stop-color="#ede9fe"/>
+      <stop offset="65%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#6025a5"/>
+      <animate attributeName="x1" values="-500;680" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="180;1360" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+    <clipPath id="text-clip">
+      <rect x="0" y="0" width="680" height="78"/>
+    </clipPath>
+  </defs>
+
+  <!-- scan line -->
+  <rect x="0" y="0" width="680" height="1" fill="#a855f7" opacity="0.25">
+    <animate attributeName="y" values="10;44;10" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.08;0.35;0.08" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- left accent -->
+  <rect x="0" y="14" width="3" height="22" rx="1.5" fill="#a855f7">
+    <animate attributeName="height" values="18;26;18" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="y" values="16;12;16" dur="2.4s" repeatCount="indefinite"/>
+  </rect>
+
+  <g clip-path="url(#text-clip)" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="15" font-weight="600">
+    <!-- prompt + cursor -->
+    <text x="14" y="32" fill="#a855f7">ù</text>
+    <text x="28" y="32" fill="#a855f7" opacity="0.9">
+      _
+      <animate attributeName="opacity" values="1;1;0;0" dur="1.1s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- tagline 1 -->
+    <g opacity="1">
+      <animate attributeName="opacity" values="1;1;0;0;0;1" keyTimes="0;0.28;0.33;0.95;0.98;1" dur="9s" repeatCount="indefinite"/>
+      <text x="44" y="32" fill="url(#aurora)">React ù TypeScript ù Java ù Spring Boot</text>
+      <text x="45" y="31" fill="#22d3ee" opacity="0" font-size="15">
+        React ù TypeScript ù Java ù Spring Boot
+        <animate attributeName="opacity" values="0;0.35;0;0.25;0" keyTimes="0;0.02;0.04;0.06;0.1" dur="9s" repeatCount="indefinite"/>
+      </text>
+      <text x="43" y="33" fill="#e879f9" opacity="0" font-size="15">
+        React ù TypeScript ù Java ù Spring Boot
+        <animate attributeName="opacity" values="0;0.3;0;0.2;0" keyTimes="0;0.03;0.05;0.08;0.12" dur="9s" repeatCount="indefinite"/>
+      </text>
+    </g>
+
+    <!-- tagline 2 -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.28;0.33;0.61;0.66;1" dur="9s" repeatCount="indefinite"/>
+      <text x="44" y="32" fill="url(#aurora)">HIPAA platforms ù 65M+ users ù microservices</text>
+      <text x="45" y="31" fill="#22d3ee" opacity="0" font-size="15">
+        HIPAA platforms ù 65M+ users ù microservices
+        <animate attributeName="opacity" values="0;0;0;0.35;0;0.25;0" keyTimes="0;0.28;0.3;0.32;0.34;0.36;0.4" dur="9s" repeatCount="indefinite"/>
+      </text>
+      <text x="43" y="33" fill="#e879f9" opacity="0" font-size="15">
+        HIPAA platforms ù 65M+ users ù microservices
+        <animate attributeName="opacity" values="0;0;0;0.3;0;0.2;0" keyTimes="0;0.29;0.31;0.33;0.35;0.38;0.42" dur="9s" repeatCount="indefinite"/>
+      </text>
+    </g>
+
+    <!-- tagline 3 -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.61;0.66;0.95;1;1" dur="9s" repeatCount="indefinite"/>
+      <text x="44" y="32" fill="url(#aurora)">Kafka ù AWS ù K8s ù event-driven business apps</text>
+      <text x="45" y="31" fill="#22d3ee" opacity="0" font-size="15">
+        Kafka ù AWS ù K8s ù event-driven business apps
+        <animate attributeName="opacity" values="0;0;0;0;0;0.35;0;0.25;0" keyTimes="0;0.61;0.63;0.65;0.66;0.68;0.7;0.72;0.76" dur="9s" repeatCount="indefinite"/>
+      </text>
+      <text x="43" y="33" fill="#e879f9" opacity="0" font-size="15">
+        Kafka ù AWS ù K8s ù event-driven business apps
+        <animate attributeName="opacity" values="0;0;0;0;0;0.3;0;0.2;0" keyTimes="0;0.62;0.64;0.65;0.66;0.69;0.71;0.74;0.78" dur="9s" repeatCount="indefinite"/>
+      </text>
+    </g>
+  </g>
+
+  <!-- animated underline sweep -->
+  <rect x="14" y="40" width="0" height="2" rx="1" fill="#a855f7" opacity="0.7">
+    <animate attributeName="width" values="0;420;0" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.85;0.2" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- subline -->
+  <text x="14" y="62" fill="#7c7c8a" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="0.14em">ENTERPRISE HEALTHCARE ù BUSINESS PORTALS ù FIELD TEAMS</text>
+</svg>
