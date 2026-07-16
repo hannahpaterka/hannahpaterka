@@ -6,11 +6,12 @@ from __future__ import annotations
 from pathlib import Path
 
 OUT = Path(__file__).resolve().parents[1] / "assets" / "project-timeline.svg"
+FEATURED_OUT = Path(__file__).resolve().parents[1] / "assets" / "featured-work.svg"
 CARD_DIR = Path(__file__).resolve().parents[1] / "assets" / "project-cards"
 
 SVG_W = 680
 CARD_W = SVG_W
-CARD_GAP = 16
+CARD_GAP = 0
 LEFT_W = 164
 PAD = 20
 RADIUS = 14
@@ -250,20 +251,20 @@ def main() -> None:
         y += card_h + CARD_GAP
 
     svg_h = y - CARD_GAP if y else 0
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{SVG_W}" height="{svg_h}" viewBox="0 0 {SVG_W} {svg_h}" role="img" aria-label="Featured work">
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{svg_h}" viewBox="0 0 {SVG_W} {svg_h}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Featured work">
   <rect width="{SVG_W}" height="{svg_h}" fill="#ffffff"/>
   {"  ".join(rendered)}
 </svg>
 '''
     OUT.write_text(svg, encoding="utf-8")
+    FEATURED_OUT.write_text(svg, encoding="utf-8")
 
     CARD_DIR.mkdir(parents=True, exist_ok=True)
     for project, card_h in zip(PROJECTS, heights):
         label = project["title"]
         if project.get("url"):
             label = f'{label} — linked project'
-        card_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{SVG_W}" height="{card_h}" viewBox="0 0 {SVG_W} {card_h}" role="img" aria-label="{esc(label)}">
-  <rect width="{SVG_W}" height="{card_h}" fill="#ffffff"/>
+        card_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{card_h}" viewBox="0 0 {SVG_W} {card_h}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="{esc(label)}">
   {card(project, 0, card_h)}
 </svg>
 '''
@@ -271,6 +272,7 @@ def main() -> None:
         card_path.write_text(card_svg, encoding="utf-8")
 
     print(f"Wrote {OUT} ({SVG_W}x{svg_h})")
+    print(f"Wrote {FEATURED_OUT} ({SVG_W}x{svg_h})")
     print(f"Wrote {len(PROJECTS)} clickable cards in {CARD_DIR}")
 
 

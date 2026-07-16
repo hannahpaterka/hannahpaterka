@@ -25,15 +25,11 @@
 
 <h2 align="center">Featured Work</h2>
 
-<!-- Project cards — linked titles open website or repo -->
+<!-- Single full-width stack — click regions map to project links -->
 <p align="center">
-  <a href="https://www.icanbwell.com/">
-    <img src="./assets/project-cards/bwell.svg" width="100%" alt="Connected Health — B.well website" />
-  </a>
-  <br />
-  <a href="https://github.com/hannahpaterka/busines-portal-readme">
-    <img src="./assets/project-cards/business-portal.svg" width="100%" alt="Business Portals — project readme" />
-  </a>
-  <br />
-  <img src="./assets/project-cards/kronos.svg" width="100%" alt="Business Management at Kronos" />
+  <img src="./assets/featured-work.svg" width="100%" alt="Featured work" usemap="#featured-work-map" />
+  <map name="featured-work-map">
+    <area shape="rect" coords="0,0,680,198" href="https://www.icanbwell.com/" alt="Connected Health" />
+    <area shape="rect" coords="0,198,680,378" href="https://github.com/hannahpaterka/busines-portal-readme" alt="Business Portals" />
+  </map>
 </p>
