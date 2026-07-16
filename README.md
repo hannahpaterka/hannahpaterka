@@ -1,90 +1,48 @@
-# Your Project
+# Hi, I'm Hannah 👋
 
-> A beautifully styled README — see **[README.html](./README.html)** for the full CSS version.
+[![GitHub followers](https://img.shields.io/github/followers/hannahpaterka?style=social)](https://github.com/hannahpaterka)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/your-profile)
 
-[![Version](https://img.shields.io/badge/version-1.0.0-purple?style=for-the-badge)]()
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)]()
-[![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)]()
-
----
-
-## Quick Start
-
-```bash
-git clone https://github.com/you/your-project.git
-cd your-project
-npm install
-npm run dev
-```
-
-Open **http://localhost:3000** in your browser.
+Welcome to my GitHub profile. This README shows up on [github.com/hannahpaterka](https://github.com/hannahpaterka).
 
 ---
 
-## Features
+## About Me
 
-| | |
-|---|---|
-| **Fast** | Optimized build pipeline |
-| **Type-safe** | Full TypeScript support |
-| **Modern UI** | Responsive & accessible |
-| **Dev-friendly** | Hot reload out of the box |
+I'm a developer who builds software with a focus on clean code and great user experiences.
 
----
-
-## How to View the Styled README in Cursor / VS Code
-
-Standard Markdown preview **does not render custom CSS**. Use one of these methods for the full styled experience:
-
-### Option 1 — Simple Browser (built-in)
-
-1. Open `README.html`
-2. `Cmd + Shift + P` → **Simple Browser: Show**
-3. Enter the file path
-
-### Option 2 — Open in browser
-
-```bash
-open README.html          # macOS
-start README.html         # Windows
-xdg-open README.html      # Linux
-```
-
-### Option 3 — Live Preview extension
-
-Install the **Live Preview** extension, then right-click `README.html` → **Show Preview**.
-
-### Option 4 — One-shot dev server
-
-```bash
-npx --yes live-server README.html
-```
-
-### Markdown preview (README.md only)
-
-For this `.md` file: `Cmd + Shift + V` (Mac) or `Ctrl + Shift + V` (Windows/Linux),  
-or click the preview icon in the top-right of the editor.
+- 🔭 Currently working on ...
+- 🌱 Learning ...
+- 💬 Ask me about ...
+- 📫 Reach me at **your.email@example.com**
 
 ---
 
-## Scripts
+## Tech Stack
 
-```bash
-npm run dev      # Start dev server
-npm run build    # Production build
-npm run test     # Run tests
-npm run lint     # Lint code
-```
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 ---
 
-## Files
+## Featured Projects
 
-| File | Purpose |
-|------|---------|
-| `README.html` | Styled version with CSS — use for local preview |
-| `README.md` | GitHub-compatible Markdown (this file) |
+| Project | Description |
+|---------|-------------|
+| [repo-name](https://github.com/hannahpaterka/repo-name) | Short description of what it does |
+| [repo-name](https://github.com/hannahpaterka/repo-name) | Short description of what it does |
 
 ---
 
-MIT License
+## GitHub Stats
+
+![Hannah's GitHub stats](https://github-readme-stats.vercel.app/api?username=hannahpaterka&show_icons=true&theme=default)
+
+---
+
+## Connect
+
+[![GitHub](https://img.shields.io/badge/GitHub-hannahpaterka-181717?style=for-the-badge&logo=github)](https://github.com/hannahpaterka)
+[![Email](https://img.shields.io/badge/Email-your.email@example.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
