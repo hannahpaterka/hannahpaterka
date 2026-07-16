@@ -1,95 +1,62 @@
 #!/usr/bin/env python3
-"""Build combined featured-work timeline SVG for GitHub README."""
+"""Build featured-work cards SVG for GitHub README."""
+
+from __future__ import annotations
 
 from pathlib import Path
 
 OUT = Path(__file__).resolve().parents[1] / "assets" / "project-timeline.svg"
 
+CARD_W = 300
+CARD_GAP = 12
+MARGIN = 18
+PAD = 16
+CARD_TOP = 58
+SVG_W = MARGIN * 2 + CARD_W * 3 + CARD_GAP * 2  # 960
+
 PROJECTS = [
     {
-        "id": "a",
-        "x": 24,
-        "w": 288,
-        "tower_h": 128,
-        "tower_y": 52,
-        "grad": "towerA",
-        "accent": "#c4b5fd",
-        "accent2": "#e9d5ff",
-        "icon": "B.well",
-        "hero": "65M+",
-        "hero_sub": "users",
+        "company": "B.well",
+        "accent": "#a855f7",
+        "metric": "65M+",
         "title": "Connected Health",
         "subtitle": "Enterprise healthcare platform",
         "dates": "2021 – 2025",
-        "stats": [
-            ("75% faster", "delivery"),
-            ("85%+", "test coverage"),
-            ("2hr → 20min", "releases"),
-            ("Walgreens", "Samsung"),
+        "achievements": [
+            "75% faster feature delivery for Walgreens & Samsung",
+            "Monolith → React micro-frontends & NestJS microservices",
+            "Releases 2hr → 20min · 85%+ test coverage",
+            "HIPAA Cognito/SSO, IAM & Kafka event pipelines",
         ],
-        "tech": [
-            "React", "TypeScript", "NestJS", "Kafka", "Redis", "GraphQL",
-            "AWS", "Docker", "K8s", "Storybook", "Jest", "Cypress",
-            "GH Actions", "Datadog", "Grafana",
-        ],
-        "footer": "Monolith → micro-frontends · HIPAA Cognito/SSO · Kafka events",
-        "year_x": 156,
+        "tech": ["React", "TypeScript", "NestJS", "Kafka", "AWS", "GraphQL"],
     },
     {
-        "id": "c",
-        "x": 336,
-        "w": 288,
-        "tower_h": 82,
-        "tower_y": 98,
-        "grad": "towerC",
-        "accent": "#ddd6fe",
-        "accent2": "#f3e8ff",
-        "icon": "Biz Portal",
-        "hero": "End-to-end",
-        "hero_sub": "operations",
+        "company": "Contract",
+        "accent": "#c084fc",
+        "metric": "Full-stack",
         "title": "Business Portal",
         "subtitle": "Invoicing, maps & vendor coordination",
-        "dates": "2023 – 2024 · Contract",
-        "stats": [
-            ("Invoices", "work orders"),
-            ("Maps", "messaging"),
-            ("Office", "field teams"),
-            ("Secure", "REST APIs"),
+        "dates": "2023 – 2024",
+        "achievements": [
+            "Spring Boot portal for invoices, work orders & scheduling",
+            "Maps, messaging & vendor tools for field teams",
+            "PostgreSQL schemas & secure role-based REST APIs",
         ],
-        "tech": [
-            "Java", "Spring Boot", "PostgreSQL", "JavaScript", "Bootstrap",
-            "jQuery", "Maven", "Heroku", "Jenkins", "Postman",
-        ],
-        "footer": "github.com/hannahpaterka/busines-portal-readme",
-        "year_x": 468,
+        "tech": ["Java", "Spring Boot", "PostgreSQL", "JavaScript", "Bootstrap"],
     },
     {
-        "id": "b",
-        "x": 648,
-        "w": 288,
-        "tower_h": 108,
-        "tower_y": 72,
-        "grad": "towerB",
-        "accent": "#c4b5fd",
-        "accent2": "#ede9fe",
-        "icon": "Kronos",
-        "hero": "85%",
-        "hero_sub": "fewer errors",
+        "company": "Kronos",
+        "accent": "#a78bfa",
+        "metric": "85%",
         "title": "Business Management",
-        "subtitle": "Spring Boot portals · office & field",
+        "subtitle": "Spring Boot · office & field teams",
         "dates": "2025 – Present",
-        "stats": [
-            ("Zero", "downtime deploys"),
-            ("Desktop", "+ mobile"),
-            ("Invoicing", "scheduling"),
-            ("Role-based", "permissions"),
+        "achievements": [
+            "85% fewer data entry errors & support calls via automation",
+            "Invoicing, payments, scheduling & job tracking",
+            "Zero-downtime deploys · desktop & mobile portals",
         ],
-        "tech": [
-            "Java", "Spring Boot", "PostgreSQL", "JavaScript", "Bootstrap",
-            "Heroku", "Maven", "Jenkins", "JUnit", "Git",
-        ],
-        "footer": "Automation · payments · job tracking · production ops",
-        "year_x": 780,
+        "tech": ["Java", "Spring Boot", "PostgreSQL", "Bootstrap", "Heroku"],
     },
 ]
 
@@ -103,120 +70,112 @@ def esc(text: str) -> str:
     )
 
 
-def tech_pills(x: int, y: int, w: int, tech: list[str], fill: str) -> tuple[str, int]:
+def wrap_text(text: str, max_chars: int) -> list[str]:
+    words = text.split()
     lines: list[str] = []
-    cx = x
-    cy = y
-    max_x = x + w - 8
-    for label in tech:
-        tw = len(label) * 5.6 + 14
-        if cx + tw > max_x:
-            cx = x
-            cy += 18
-        lines.append(
-            f'<rect x="{cx:.0f}" y="{cy}" width="{tw:.0f}" height="14" rx="3" fill="#161b22" stroke="{fill}" stroke-width="0.6" opacity="0.95"/>'
-        )
-        lines.append(
-            f'<text x="{cx + tw / 2:.0f}" y="{cy + 10}" text-anchor="middle" fill="#cbd5e1" font-family="ui-monospace, Menlo, monospace" font-size="6.5">{esc(label)}</text>'
-        )
-        cx += tw + 5
-    return "\n    ".join(lines), cy + 22
+    current: list[str] = []
+    for word in words:
+        trial = " ".join([*current, word])
+        if len(trial) <= max_chars:
+            current.append(word)
+        else:
+            if current:
+                lines.append(" ".join(current))
+            current = [word]
+    if current:
+        lines.append(" ".join(current))
+    return lines
 
 
-def stat_grid(x: int, y: int, w: int, stats: list[tuple[str, str]], accent: str) -> str:
+def achievement_block(x: int, y: int, achievements: list[str]) -> tuple[str, int]:
     parts: list[str] = []
-    col_w = (w - 8) / 2
-    for i, (big, small) in enumerate(stats):
-        col = i % 2
-        row = i // 2
-        sx = x + col * (col_w + 8)
-        sy = y + row * 34
+    cy = y
+    line_h = 11.5
+    max_chars = 36
+    for achievement in achievements:
+        lines = wrap_text(achievement, max_chars)
         parts.append(
-            f'<rect x="{sx:.0f}" y="{sy}" width="{col_w:.0f}" height="28" rx="4" fill="#161b22" opacity="0.9"/>'
+            f'<text x="{x}" y="{cy + 4}" fill="#64748b" '
+            f'font-family="ui-monospace, Menlo, monospace" font-size="8">—</text>'
         )
-        parts.append(
-            f'<text x="{sx + col_w / 2:.0f}" y="{sy + 13}" text-anchor="middle" fill="{accent}" font-family="ui-monospace, Menlo, monospace" font-size="9" font-weight="bold">{esc(big)}</text>'
-        )
-        parts.append(
-            f'<text x="{sx + col_w / 2:.0f}" y="{sy + 23}" text-anchor="middle" fill="#9898a6" font-family="ui-monospace, Menlo, monospace" font-size="6.5">{esc(small)}</text>'
-        )
-    return "\n    ".join(parts)
+        for index, line in enumerate(lines):
+            parts.append(
+                f'<text x="{x + 10}" y="{cy + 4 + index * line_h}" fill="#d1d5db" '
+                f'font-family="ui-monospace, Menlo, monospace" font-size="8.5">{esc(line)}</text>'
+            )
+        cy += 6 + len(lines) * line_h
+    return "\n    ".join(parts), cy
 
 
-def column(p: dict) -> str:
-    cx = p["x"] + p["w"] / 2
-    ty = p["tower_y"]
-    th = p["tower_h"]
-    panel_y = ty + th + 10
+def body_bottom(project: dict) -> int:
+    ach_start = CARD_TOP + 82
+    _, ach_end = achievement_block(PAD + 4, ach_start, project["achievements"])
+    return ach_end + 22
 
-    parts = [
-        f'<!-- {esc(p["icon"])} -->',
-        f'<rect x="{p["x"]}" y="{ty}" width="{p["w"]}" height="{th}" rx="6" fill="url(#{p["grad"]})" opacity="0.95"/>',
-        f'<rect x="{p["x"] + 8}" y="{ty + 8}" width="{p["w"] - 16}" height="20" rx="3" fill="#0d0820" opacity="0.55"/>',
-        f'<text x="{cx}" y="{ty + 22}" text-anchor="middle" fill="{p["accent2"]}" font-family="ui-monospace, Menlo, monospace" font-size="9" font-weight="bold">{esc(p["icon"])}</text>',
-        f'<text x="{cx}" y="{ty + th * 0.55:.0f}" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, Menlo, monospace" font-size="20" font-weight="bold">{esc(p["hero"])}</text>',
-        f'<text x="{cx}" y="{ty + th * 0.55 + 16:.0f}" text-anchor="middle" fill="{p["accent2"]}" font-family="ui-monospace, Menlo, monospace" font-size="8">{esc(p["hero_sub"])}</text>',
-        f'<rect x="{p["x"]}" y="{panel_y}" width="{p["w"]}" height="248" rx="6" fill="#161b22" opacity="0.85"/>',
-        f'<text x="{p["x"] + 12}" y="{panel_y + 18}" fill="{p["accent"]}" font-family="ui-monospace, Menlo, monospace" font-size="10" font-weight="bold">{esc(p["title"])}</text>',
-        f'<text x="{p["x"] + 12}" y="{panel_y + 32}" fill="#9898a6" font-family="ui-monospace, Menlo, monospace" font-size="7">{esc(p["subtitle"])}</text>',
-        f'<text x="{p["x"] + 12}" y="{panel_y + 46}" fill="#6b7280" font-family="ui-monospace, Menlo, monospace" font-size="7">{esc(p["dates"])}</text>',
-        stat_grid(p["x"] + 10, panel_y + 54, p["w"] - 20, p["stats"], p["accent"]),
-    ]
 
-    tech_y = panel_y + 130
-    pills, end_y = tech_pills(p["x"] + 10, tech_y, p["w"] - 20, p["tech"], p["accent"])
-    parts.append(pills)
-    parts.append(
-        f'<text x="{p["x"] + 12}" y="{min(end_y + 8, panel_y + 238)}" fill="#6b7280" font-family="ui-monospace, Menlo, monospace" font-size="6">{esc(p["footer"])}</text>'
-    )
-    return "\n  ".join(parts)
+def card(project: dict, x: int, card_h: int) -> str:
+    inner = x + PAD
+    right = x + CARD_W - PAD
+    ach_start = CARD_TOP + 82
+    achievements, _ = achievement_block(inner + 4, ach_start, project["achievements"])
+    stack_y = CARD_TOP + card_h - 12
+    badge_w = max(48, len(project["metric"]) * 8 + 18)
+
+    return "\n  ".join([
+        f'<!-- {esc(project["company"])} -->',
+        f'<rect x="{x}" y="{CARD_TOP}" width="{CARD_W}" height="{card_h}" '
+        f'fill="#0a0812" stroke="#1e1035" stroke-width="1"/>',
+        f'<rect x="{x}" y="{CARD_TOP}" width="3" height="{card_h}" fill="{project["accent"]}"/>',
+        f'<text x="{inner + 4}" y="{CARD_TOP + 22}" fill="{project["accent"]}" '
+        f'font-family="ui-monospace, Menlo, monospace" font-size="9" font-weight="700" letter-spacing="0.14em">'
+        f'{esc(project["company"].upper())}</text>',
+        f'<text x="{right}" y="{CARD_TOP + 22}" text-anchor="end" fill="#64748b" '
+        f'font-family="ui-monospace, Menlo, monospace" font-size="8">{esc(project["dates"])}</text>',
+        f'<rect x="{right - badge_w}" y="{CARD_TOP + 8}" width="{badge_w}" height="26" '
+        f'fill="#12082a" stroke="{project["accent"]}" stroke-width="1"/>',
+        f'<text x="{right - badge_w / 2}" y="{CARD_TOP + 26}" text-anchor="middle" fill="#ffffff" '
+        f'font-family="ui-monospace, Menlo, monospace" font-size="10" font-weight="700">{esc(project["metric"])}</text>',
+        f'<text x="{inner + 4}" y="{CARD_TOP + 44}" fill="#f8fafc" font-family="ui-monospace, Menlo, monospace" '
+        f'font-size="13" font-weight="700">{esc(project["title"])}</text>',
+        f'<text x="{inner + 4}" y="{CARD_TOP + 60}" fill="#94a3b8" font-family="ui-monospace, Menlo, monospace" font-size="8">'
+        f'{esc(project["subtitle"])}</text>',
+        achievements,
+        f'<text x="{inner + 4}" y="{stack_y}" fill="#64748b" font-family="ui-monospace, Menlo, monospace" '
+        f'font-size="7.5" letter-spacing="0.06em">STACK</text>',
+        f'<text x="{inner + 44}" y="{stack_y}" fill="#94a3b8" font-family="ui-monospace, Menlo, monospace" font-size="7.5">'
+        f'{esc(" · ".join(project["tech"]))}</text>',
+    ])
 
 
 def main() -> None:
-    cols = "\n  ".join(column(p) for p in PROJECTS)
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" role="img" aria-label="Featured work timeline">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0a0618"/>
-      <stop offset="100%" stop-color="#151028"/>
-    </linearGradient>
-    <linearGradient id="towerA" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ad5afc"/>
-      <stop offset="100%" stop-color="#6025a5"/>
-    </linearGradient>
-    <linearGradient id="towerB" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#a78bfa"/>
-      <stop offset="100%" stop-color="#5b21b6"/>
-    </linearGradient>
-    <linearGradient id="towerC" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#c084fc"/>
-      <stop offset="100%" stop-color="#7e22ce"/>
-    </linearGradient>
-  </defs>
+    card_x = [MARGIN, MARGIN + CARD_W + CARD_GAP, MARGIN + (CARD_W + CARD_GAP) * 2]
+    card_h = max(body_bottom(p) for p in PROJECTS) - CARD_TOP
+    rendered = [card(project, x, card_h) for project, x in zip(PROJECTS, card_x)]
+    timeline_centers = [x + CARD_W / 2 for x in card_x]
+    timeline_y = CARD_TOP + card_h + 24
+    svg_h = timeline_y + 32
 
-  <rect width="960" height="620" fill="url(#bg)" rx="12"/>
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{SVG_W}" height="{svg_h}" viewBox="0 0 {SVG_W} {svg_h}" role="img" aria-label="Featured work">
+  <rect width="{SVG_W}" height="{svg_h}" fill="#030710"/>
 
-  <text x="480" y="30" text-anchor="middle" fill="#c4b5fd" font-family="ui-monospace, Menlo, monospace" font-size="14" letter-spacing="0.12em" font-weight="bold">FEATURED WORK</text>
-  <text x="480" y="46" text-anchor="middle" fill="#6b7280" font-family="ui-monospace, Menlo, monospace" font-size="8">Building heights reflect project scale · 2021 – Present</text>
+  <text x="{SVG_W / 2:.0f}" y="28" text-anchor="middle" fill="#c4b5fd"
+    font-family="ui-monospace, Menlo, monospace" font-size="12" letter-spacing="0.18em" font-weight="700">FEATURED WORK</text>
 
-  {cols}
+  {"  ".join(rendered)}
 
-  <!-- timeline rail -->
-  <line x1="40" y1="582" x2="920" y2="582" stroke="#4c1d95" stroke-width="2"/>
-  <circle cx="156" cy="582" r="5" fill="#a855f7"/>
-  <circle cx="480" cy="582" r="5" fill="#a855f7"/>
-  <circle cx="780" cy="582" r="5" fill="#a855f7"/>
-  <text x="156" y="602" text-anchor="middle" fill="#9898a6" font-family="ui-monospace, Menlo, monospace" font-size="10">2021</text>
-  <text x="480" y="602" text-anchor="middle" fill="#9898a6" font-family="ui-monospace, Menlo, monospace" font-size="10">2023</text>
-  <text x="780" y="602" text-anchor="middle" fill="#9898a6" font-family="ui-monospace, Menlo, monospace" font-size="10">2025</text>
-
-  <!-- connection arcs -->
-  <path d="M 312 170 Q 420 120 336 140" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.3" stroke-dasharray="4 3"/>
-  <path d="M 624 155 Q 700 115 648 130" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.3" stroke-dasharray="4 3"/>
+  <rect x="{timeline_centers[0] - 3:.0f}" y="{timeline_y - 3}" width="6" height="6" fill="{PROJECTS[0]["accent"]}"/>
+  <rect x="{timeline_centers[1] - 3:.0f}" y="{timeline_y - 3}" width="6" height="6" fill="{PROJECTS[1]["accent"]}"/>
+  <rect x="{timeline_centers[2] - 3:.0f}" y="{timeline_y - 3}" width="6" height="6" fill="{PROJECTS[2]["accent"]}"/>
+  <text x="{timeline_centers[0]:.0f}" y="{timeline_y + 18}" text-anchor="middle" fill="#64748b"
+    font-family="ui-monospace, Menlo, monospace" font-size="9">2021</text>
+  <text x="{timeline_centers[1]:.0f}" y="{timeline_y + 18}" text-anchor="middle" fill="#64748b"
+    font-family="ui-monospace, Menlo, monospace" font-size="9">2023</text>
+  <text x="{timeline_centers[2]:.0f}" y="{timeline_y + 18}" text-anchor="middle" fill="#64748b"
+    font-family="ui-monospace, Menlo, monospace" font-size="9">2025</text>
 </svg>
 '''
     OUT.write_text(svg, encoding="utf-8")
-    print(f"Wrote {OUT}")
+    print(f"Wrote {OUT} ({SVG_W}x{svg_h})")
 
 
 if __name__ == "__main__":

@@ -1,15 +1,7 @@
-<!-- Animated waving header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0618,100:3b0764&height=180&section=header&text=Hannah%20Paterka&fontSize=38&fontAlignY=35&desc=Senior%20Software%20Engineer&descSize=18&descAlignY=58&descAlign=55" width="100%" />
-
-<!-- Typing animation -->
+<!-- Header -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=22&duration=3000&pause=1000&color=7B2CBF&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+Hannah+%F0%9F%91%8B;React+%7C+TypeScript+%7C+Java;HIPAA-compliant+healthcare+%26+enterprise+platforms;Building+Spring+Boot+business+portals+for+office+%26+field+teams" alt="Typing animation" />
-</p>
-
-<p align="center">
-  <a href="https://github.com/hannahpaterka"><img src="https://img.shields.io/github/followers/hannahpaterka?style=social" alt="GitHub followers" /></a>
-  &nbsp;
-  <a href="https://linkedin.com/in/hannahpaterka"><img src="https://img.shields.io/badge/LinkedIn-hannahpaterka-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <img src="./assets/header.svg" width="680" alt="Hannah Paterka — Senior Software Engineer" />
+  <img src="./assets/tagline-animation.svg" width="680" alt="React, TypeScript, healthcare platforms, and business portals" />
 </p>
 
 <!-- City skyline — full GitCity graphic, nothing cropped -->
@@ -19,11 +11,18 @@
   </a>
 </p>
 
----
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=hannahpaterka&hide_border=true&background=030710&ring=a855f7&fire=a855f7&currStreakLabel=a855f7&sideLabels=c4b5fd&dates=c4b5fd&sideNums=c4b5fd&currStreakNum=ffffff" height="165" alt="GitHub streak" />
+</p>
+
+<p align="center">
+  <img src="./assets/top-languages.svg" width="680" alt="Most used languages" />
+</p>
 
 ## Tech Stack
 
-<p align="left"><b>Frontend</b>&nbsp;
+<p align="left"><b>Frontend & UI</b></p>
+<p align="left">
   <a href="https://react.dev"><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /></a>
   <a href="https://www.typescriptlang.org"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" /></a>
@@ -35,7 +34,9 @@
   <a href="https://www.w3.org/WAI/standards-guidelines/wcag/"><img src="https://img.shields.io/badge/WCAG-005A9C?style=for-the-badge" alt="WCAG / ARIA" /></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl"><img src="https://img.shields.io/badge/i18n-8B5CF6?style=for-the-badge" alt="i18n" /></a>
 </p>
-<p align="left"><b>Backend</b>&nbsp;
+
+<p align="left"><b>Backend & APIs</b></p>
+<p align="left">
   <a href="https://www.oracle.com/java/"><img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" /></a>
   <a href="https://spring.io/projects/spring-boot"><img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot" /></a>
   <a href="https://nestjs.com"><img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" alt="NestJS" /></a>
@@ -45,13 +46,17 @@
   <a href="https://maven.apache.org"><img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white" alt="Maven" /></a>
   <a href="https://www.hl7.org/fhir/"><img src="https://img.shields.io/badge/FHIR-009688?style=for-the-badge" alt="FHIR" /></a>
 </p>
-<p align="left"><b>Data</b>&nbsp;
+
+<p align="left"><b>Data & Messaging</b></p>
+<p align="left">
   <a href="https://www.postgresql.org"><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" /></a>
   <a href="https://www.w3.org/sql/"><img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" /></a>
   <a href="https://redis.io"><img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" /></a>
   <a href="https://kafka.apache.org"><img src="https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white" alt="Kafka" /></a>
 </p>
-<p align="left"><b>Cloud & DevOps</b>&nbsp;
+
+<p align="left"><b>Cloud & DevOps</b></p>
+<p align="left">
   <a href="https://aws.amazon.com"><img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS" /></a>
   <a href="https://www.docker.com"><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" /></a>
   <a href="https://kubernetes.io"><img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" /></a>
@@ -59,7 +64,9 @@
   <a href="https://github.com/features/actions"><img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" /></a>
   <a href="https://www.jenkins.io"><img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins" /></a>
 </p>
-<p align="left"><b>Testing</b>&nbsp;
+
+<p align="left"><b>Testing & Quality</b></p>
+<p align="left">
   <a href="https://jestjs.io"><img src="https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white" alt="Jest" /></a>
   <a href="https://www.cypress.io"><img src="https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white" alt="Cypress" /></a>
   <a href="https://junit.org"><img src="https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white" alt="JUnit" /></a>
@@ -68,7 +75,9 @@
   <a href="https://www.datadoghq.com"><img src="https://img.shields.io/badge/Datadog-632CA6?style=for-the-badge&logo=datadog&logoColor=white" alt="Datadog" /></a>
   <a href="https://grafana.com"><img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white" alt="Grafana" /></a>
 </p>
-<p align="left"><b>Tools</b>&nbsp;
+
+<p align="left"><b>Tools & Mobile</b></p>
+<p align="left">
   <a href="https://git-scm.com"><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" /></a>
   <a href="https://github.com"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
   <a href="https://code.visualstudio.com"><img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" /></a>
@@ -76,8 +85,6 @@
   <a href="https://developer.apple.com/xcode/"><img src="https://img.shields.io/badge/Xcode-147EFB?style=for-the-badge&logo=xcode&logoColor=white" alt="Xcode" /></a>
   <a href="https://developer.android.com"><img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" /></a>
 </p>
-
----
 
 ## About Me
 
@@ -90,9 +97,6 @@ Currently at **Kronos**, building **Java/Spring Boot business portals** for desk
 - ⚡ Improved release velocity from ~2 hours to **~20 minutes** with GitHub Actions, **85%+ test coverage**, and monitoring via Datadog & Grafana
 - 🏗️ At **Kronos**, building invoicing, payments, scheduling, and job-tracking systems — reducing data entry errors and calls/emails by **85%** through automation
 - 📱 Developing responsive **Bootstrap/JavaScript** frontends for field use, with **PostgreSQL** schemas and secure REST APIs with role-based permissions
-- 🔗 **[linkedin.com/in/hannahpaterka](https://linkedin.com/in/hannahpaterka)**
-
----
 
 ## Featured Work
 
@@ -103,4 +107,10 @@ Currently at **Kronos**, building **Java/Spring Boot business portals** for desk
 
 <p align="center">
   <a href="https://github.com/hannahpaterka/busines-portal-readme">📁 Business Portal repo → busines-portal-readme</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/hannahpaterka"><img src="https://img.shields.io/github/followers/hannahpaterka?style=social" alt="GitHub followers" /></a>
+  &nbsp;
+  <a href="https://linkedin.com/in/hannahpaterka"><img src="https://img.shields.io/badge/LinkedIn-hannahpaterka-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 </p>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="96" viewBox="0 0 680 96" role="img" aria-label="Hannah Paterka, Senior Software Engineer">
+  <rect width="680" height="96" fill="#030710"/>
+  <rect x="0" y="0" width="4" height="96" fill="#a855f7"/>
+
+  <text x="340" y="44" text-anchor="middle" fill="#f8fafc"
+    font-family="ui-monospace, Menlo, monospace" font-size="28" font-weight="700" letter-spacing="0.04em">
+    Hannah Paterka
+  </text>
+  <text x="340" y="68" text-anchor="middle" fill="#a855f7"
+    font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="600" letter-spacing="0.12em">
+    SENIOR SOFTWARE ENGINEER
+  </text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="52" viewBox="0 0 680 52" role="img" aria-label="Rotating professional taglines">
+  <defs>
+    <linearGradient id="shine" x1="0" y1="0" x2="680" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="45%" stop-color="#e9d5ff"/>
+      <stop offset="55%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+      <animate attributeName="x1" values="-400;680" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="280;1360" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <clipPath id="fade-clip">
+      <rect x="40" y="8" width="600" height="28"/>
+    </clipPath>
+  </defs>
+
+  <rect width="680" height="52" fill="#030710"/>
+
+  <g clip-path="url(#fade-clip)" font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="500">
+    <g opacity="1">
+      <animate attributeName="opacity" values="1;1;0;0;0;1" keyTimes="0;0.22;0.27;0.94;0.97;1" dur="12s" repeatCount="indefinite"/>
+      <text x="340" y="28" text-anchor="middle" fill="url(#shine)">React &#183; TypeScript &#183; Java &#183; Spring Boot</text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.22;0.27;0.47;0.52;1" dur="12s" repeatCount="indefinite"/>
+      <text x="340" y="28" text-anchor="middle" fill="url(#shine)">HIPAA healthcare platforms &#183; 65M+ users</text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;1;1;0;0" keyTimes="0;0.47;0.52;0.72;0.77;0.94;0.97;1" dur="12s" repeatCount="indefinite"/>
+      <text x="340" y="28" text-anchor="middle" fill="url(#shine)">Business portals for office &amp; field teams</text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0;0;1;1;0;0" keyTimes="0;0.72;0.77;0.94;0.97;1;1;1;1;1" dur="12s" repeatCount="indefinite"/>
+      <text x="340" y="28" text-anchor="middle" fill="url(#shine)">Kafka &#183; AWS &#183; microservices &amp; event-driven apps</text>
+    </g>
+  </g>
+</svg>
