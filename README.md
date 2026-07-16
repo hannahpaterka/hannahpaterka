@@ -96,7 +96,7 @@ Currently at **Kronos**, building **Java/Spring Boot business portals** for desk
 <p align="center">
   <img src="./assets/featured-work.svg" width="100%" alt="Featured work" usemap="#featured-work-map" />
   <map name="featured-work-map">
-    <area shape="rect" coords="0,0,680,198" href="https://www.icanbwell.com/" alt="Connected Health" />
-    <area shape="rect" coords="0,198,680,378" href="https://github.com/hannahpaterka/busines-portal-readme" alt="Business Portals" />
+    <area shape="rect" coords="0,0,680,216" href="https://www.icanbwell.com/" alt="Connected Health" />
+    <area shape="rect" coords="0,244,680,442" href="https://github.com/hannahpaterka/busines-portal-readme" alt="Business Portals" />
   </map>
 </p>

@@ -1,26 +1,78 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="180" viewBox="0 0 680 180" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Business Portals — linked project">
-  <!-- Independent -->
-  <rect x="0" y="0" width="680" height="180" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
-  <path d="M 0 14 Q 0 0 14 0 L 164 0 L 164 180 L 14 180 Q 0 180 0 166 Z" fill="#111827"/>
-    <text x="82" y="78.5" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, Menlo, monospace" font-size="8.5" font-weight="700" letter-spacing="0.14em">INDEPENDENT</text>
-      <text x="82" y="96.5" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700">End-to-end</text>
-      <text x="82" y="110.5" text-anchor="middle" fill="#ffffff" opacity="0.78" font-family="system-ui, -apple-system, sans-serif" font-size="7">portal delivery</text>
-    <text x="184" y="34" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600">Business Portals</text>
-    <text x="184" y="52" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="8.5">Invoicing, maps &amp; vendor coordination</text>
-    <text x="184" y="82" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
-    <text x="194" y="82" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">Spring Boot portal for invoices, work orders &amp; scheduling</text>
-    <text x="184" y="100" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
-    <text x="194" y="100" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">Maps, messaging &amp; vendor tools for field teams</text>
-    <text x="184" y="118" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
-    <text x="194" y="118" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">PostgreSQL schemas &amp; secure role-based REST APIs</text>
-    <rect x="184.0" y="139.0" width="33.6" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
-    <text x="200.8" y="150.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Java</text>
-    <rect x="222.6" y="139.0" width="71.4" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
-    <text x="258.3" y="150.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Spring Boot</text>
-    <rect x="299.0" y="139.0" width="66.0" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
-    <text x="332.0" y="150.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">PostgreSQL</text>
-    <rect x="370.0" y="139.0" width="66.0" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
-    <text x="403.0" y="150.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">JavaScript</text>
-    <rect x="441.0" y="139.0" width="60.6" height="17" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
-    <text x="471.3" y="150.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Bootstrap</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="198" viewBox="0 0 680 198" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Business Portals — linked project">
+<defs>
+  <linearGradient id="border-shine-bwell" x1="0" y1="0" x2="680" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#e5e7eb"/>
+    <stop offset="40%" stop-color="#e5e7eb"/>
+    <stop offset="50%" stop-color="#7c3aed"/>
+    <stop offset="60%" stop-color="#e5e7eb"/>
+    <stop offset="100%" stop-color="#e5e7eb"/>
+    <animate attributeName="x1" values="-320;680" dur="4.5s" begin="0.0s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="360;1360" dur="4.5s" begin="0.0s" repeatCount="indefinite"/>
+  </linearGradient>
+  <linearGradient id="title-shine-bwell" x1="0" y1="0" x2="320" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#111827"/>
+    <stop offset="40%" stop-color="#111827"/>
+    <stop offset="50%" stop-color="#7c3aed"/>
+    <stop offset="60%" stop-color="#111827"/>
+    <stop offset="100%" stop-color="#111827"/>
+    <animate attributeName="x1" values="-180;320" dur="4.5s" begin="0.0s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="140;640" dur="4.5s" begin="0.0s" repeatCount="indefinite"/>
+  </linearGradient>
+  <linearGradient id="border-shine-business-portal" x1="0" y1="0" x2="680" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#e5e7eb"/>
+    <stop offset="40%" stop-color="#e5e7eb"/>
+    <stop offset="50%" stop-color="#6d28d9"/>
+    <stop offset="60%" stop-color="#e5e7eb"/>
+    <stop offset="100%" stop-color="#e5e7eb"/>
+    <animate attributeName="x1" values="-320;680" dur="4.5s" begin="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="360;1360" dur="4.5s" begin="1.5s" repeatCount="indefinite"/>
+  </linearGradient>
+  <linearGradient id="title-shine-business-portal" x1="0" y1="0" x2="320" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#111827"/>
+    <stop offset="40%" stop-color="#111827"/>
+    <stop offset="50%" stop-color="#6d28d9"/>
+    <stop offset="60%" stop-color="#111827"/>
+    <stop offset="100%" stop-color="#111827"/>
+    <animate attributeName="x1" values="-180;320" dur="4.5s" begin="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="140;640" dur="4.5s" begin="1.5s" repeatCount="indefinite"/>
+  </linearGradient>
+  <linearGradient id="border-shine-kronos" x1="0" y1="0" x2="680" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#e5e7eb"/>
+    <stop offset="40%" stop-color="#e5e7eb"/>
+    <stop offset="50%" stop-color="#8b5cf6"/>
+    <stop offset="60%" stop-color="#e5e7eb"/>
+    <stop offset="100%" stop-color="#e5e7eb"/>
+    <animate attributeName="x1" values="-320;680" dur="4.5s" begin="3.0s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="360;1360" dur="4.5s" begin="3.0s" repeatCount="indefinite"/>
+  </linearGradient>
+</defs>
+  <!-- Independent tile -->
+  <rect x="1.25" y="1.25" width="677.5" height="195.5" rx="10" fill="none" stroke="#6d28d9" stroke-width="5" opacity="0.18">
+    <animate attributeName="opacity" values="0.08;0.35;0.08" dur="3.2s" begin="1.5s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="1.25" y="1.25" width="677.5" height="195.5" rx="10" fill="#ffffff" stroke="url(#border-shine-business-portal)" stroke-width="2.5"/>
+    <text x="20" y="22" fill="#64748b" font-family="ui-monospace, Menlo, monospace" font-size="8" font-weight="700" letter-spacing="0.14em">INDEPENDENT</text>
+    <rect x="533.0" y="12" width="121.0" height="36" rx="11" fill="#ffffff" stroke="#6d28d9" stroke-width="1.2" opacity="0.95">
+      <animate attributeName="opacity" values="0.82;1;0.82" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <text x="593.5" y="27" text-anchor="middle" fill="#6d28d9" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="700">End-to-end</text>
+    <text x="593.5" y="40" text-anchor="middle" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="6.5">portal delivery</text>
+    <text x="20" y="58" fill="url(#title-shine-business-portal)" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700">Business Portals</text>
+    <text x="20" y="76" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="8.5">Invoicing, maps &amp; vendor coordination</text>
+    <text x="20" y="104" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+    <text x="30" y="104" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">Spring Boot portal for invoices, work orders &amp; scheduling</text>
+    <text x="20" y="122" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+    <text x="30" y="122" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">Maps, messaging &amp; vendor tools for field teams</text>
+    <text x="20" y="140" fill="#7c3aed" font-family="system-ui, -apple-system, sans-serif" font-size="9">•</text>
+    <text x="30" y="140" fill="#374151" font-family="system-ui, -apple-system, sans-serif" font-size="9">PostgreSQL schemas &amp; secure role-based REST APIs</text>
+    <rect x="20.0" y="157.0" width="33.6" height="17" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="36.8" y="168.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Java</text>
+    <rect x="58.6" y="157.0" width="71.4" height="17" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="94.3" y="168.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Spring Boot</text>
+    <rect x="135.0" y="157.0" width="66.0" height="17" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="168.0" y="168.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">PostgreSQL</text>
+    <rect x="206.0" y="157.0" width="66.0" height="17" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="239.0" y="168.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">JavaScript</text>
+    <rect x="277.0" y="157.0" width="60.6" height="17" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="307.3" y="168.5" text-anchor="middle" fill="#475569" font-family="ui-monospace, Menlo, monospace" font-size="7.5">Bootstrap</text>
 </svg>
