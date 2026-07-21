@@ -8,7 +8,7 @@ import re
 import urllib.request
 from pathlib import Path
 
-USERNAME = "hannahpaterka"
+USERNAME = "hanpaterka"
 OUT = Path(__file__).resolve().parents[1] / "assets" / "gitcity-skyline.svg"
 URL = f"https://gitcity.natrajx.in/api/svg?u={USERNAME}&theme=aurora"
 
