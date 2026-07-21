@@ -1,12 +1,12 @@
 <!-- Header -->
 <p align="center">
-  <img src="./assets/header.svg" width="100%" alt="Hannah Paterka — Senior Software Engineer" />
+  <img src="./assets/header.svg" width="100%" alt="Han Paterka — Senior Software Engineer" />
   <img src="./assets/tagline-animation.svg" width="100%" alt="React, TypeScript, healthcare platforms, and business portals" />
 </p>
 
 <!-- City skyline — stat squares + contribution graph -->
 <p align="center">
-  <a href="https://gitcity.natrajx.in/hannahpaterka">
+  <a href="https://gitcity.natrajx.in/hanpaterka">
     <img src="./assets/gitcity-skyline.svg" width="100%" alt="Contribution city skyline with animated stats" />
   </a>
 </p>
