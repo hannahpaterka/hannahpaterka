@@ -98,11 +98,11 @@ Currently at **Kronos**, building **Java/Spring Boot business portals** for desk
     <img src="./assets/project-cards/bwell.svg" width="100%" alt="Connected Health — B.well enterprise healthcare platform" />
   </a>
   <br /><br />
-  <a href="https://github.com/hannahpaterka/busines-portal-readme">
+  <a href="https://github.com/hanpaterka/busines-portal-readme">
     <img src="./assets/project-cards/business-portal.svg" width="100%" alt="Business Portals — invoicing, maps, and vendor coordination" />
   </a>
   <br /><br />
-  <a href="https://github.com/hannahpaterka/busines-portal-readme">
+  <a href="https://github.com/hanpaterka/busines-portal-readme">
     <img src="./assets/project-cards/kronos.svg" width="100%" alt="Business Management — Spring Boot office and field teams" />
   </a>
 </p>
